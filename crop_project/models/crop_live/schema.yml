@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: crop
+    description: "Crop production records from 2018 onwards"
+    columns:
+      - name: state
+        description: "State where crop was grown"
+      - name: crop
+        description: "Crop name"
+      - name: year
+        description: "Crop year (renamed from crop_year)"
+      - name: production
+        description: "Amount of crop produced"

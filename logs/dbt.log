@@ -98,3 +98,342 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m16:47:01.222042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E586201E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E58656E5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E58692E0F0>]}
 [0m16:47:01.222042 [debug] [MainThread]: Flushing usage events
 [0m16:47:01.876742 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:51:01.492327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD9908080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD990BD40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD9AD52B0>]}
+
+
+============================== 16:51:01.493957 | 864fdb49-dafb-403f-9914-cbbceeb8dcb7 ==============================
+[0m16:51:01.493957 [info ] [MainThread]: Running with dbt=1.9.4
+[0m16:51:01.493957 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\goura\\Desktop\\dbtdm2\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\goura\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:51:01.510788 [info ] [MainThread]: dbt version: 1.9.4
+[0m16:51:01.510788 [info ] [MainThread]: python version: 3.12.0
+[0m16:51:01.510788 [info ] [MainThread]: python path: C:\Users\goura\AppData\Local\Programs\Python\Python312\python.exe
+[0m16:51:01.510788 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m16:51:02.969512 [info ] [MainThread]: Using profiles dir at C:\Users\goura\.dbt
+[0m16:51:02.971503 [info ] [MainThread]: Using profiles.yml file at C:\Users\goura\.dbt\profiles.yml
+[0m16:51:02.971503 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\goura\Desktop\dbtdm2\dbt_project.yml
+[0m16:51:02.971503 [info ] [MainThread]: adapter type: bigquery
+[0m16:51:02.971503 [info ] [MainThread]: adapter version: 1.9.1
+[0m16:51:03.041387 [info ] [MainThread]: Configuration:
+[0m16:51:03.042407 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:51:03.042986 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:51:03.042986 [info ] [MainThread]: Required dependencies:
+[0m16:51:03.044016 [debug] [MainThread]: Executing "git --help"
+[0m16:51:03.077369 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:51:03.077369 [debug] [MainThread]: STDERR: "b''"
+[0m16:51:03.077369 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:51:03.077369 [info ] [MainThread]: Connection:
+[0m16:51:03.077369 [info ] [MainThread]:   method: service-account
+[0m16:51:03.077369 [info ] [MainThread]:   database: dbt-crop
+[0m16:51:03.077369 [info ] [MainThread]:   execution_project: dbt-crop
+[0m16:51:03.077369 [info ] [MainThread]:   schema: dbtcrop
+[0m16:51:03.077369 [info ] [MainThread]:   location: US
+[0m16:51:03.077369 [info ] [MainThread]:   priority: interactive
+[0m16:51:03.077369 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:51:03.077369 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:51:03.077369 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:51:03.077369 [info ] [MainThread]:   job_retries: 1
+[0m16:51:03.077369 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:51:03.084746 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m16:51:03.084746 [info ] [MainThread]:   timeout_seconds: 300
+[0m16:51:03.084746 [info ] [MainThread]:   client_id: None
+[0m16:51:03.085753 [info ] [MainThread]:   token_uri: None
+[0m16:51:03.086349 [info ] [MainThread]:   dataproc_region: None
+[0m16:51:03.087319 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:51:03.087319 [info ] [MainThread]:   gcs_bucket: None
+[0m16:51:03.087319 [info ] [MainThread]:   dataproc_batch: None
+[0m16:51:03.087319 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m16:51:03.370655 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:51:03.370655 [debug] [MainThread]: On debug: select 1 as id
+[0m16:51:03.379713 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:51:04.457299 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:4ff71c19-056c-43e9-9c65-d640f813d213&page=queryresults
+[0m16:51:07.538797 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:51:07.546577 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:51:07.546577 [debug] [MainThread]: Command `dbt debug` succeeded at 16:51:07.546577 after 6.19 seconds
+[0m16:51:07.546577 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:51:07.546577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD9B5AC30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD72AB5F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD92EBD70>]}
+[0m16:51:07.546577 [debug] [MainThread]: Flushing usage events
+[0m16:51:08.165963 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:51:52.075773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020585F07890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205868A22A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205893C0140>]}
+
+
+============================== 16:51:52.077369 | 9eb4676f-1338-4796-afd9-0711c24a950b ==============================
+[0m16:51:52.077369 [info ] [MainThread]: Running with dbt=1.9.4
+[0m16:51:52.080241 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\goura\\.dbt', 'log_path': 'C:\\Users\\goura\\Desktop\\dbtdm2\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt test', 'send_anonymous_usage_stats': 'True'}
+[0m16:51:53.523050 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9eb4676f-1338-4796-afd9-0711c24a950b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205896C3D70>]}
+[0m16:51:53.575101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9eb4676f-1338-4796-afd9-0711c24a950b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205A4C04B00>]}
+[0m16:51:53.577121 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m16:51:53.942353 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m16:51:53.942353 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:51:53.942353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9eb4676f-1338-4796-afd9-0711c24a950b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205A5111D90>]}
+[0m16:51:56.408240 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.crop_project
+[0m16:51:56.412248 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9eb4676f-1338-4796-afd9-0711c24a950b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205A539A150>]}
+[0m16:51:56.439134 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m16:51:56.441173 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m16:51:56.500605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9eb4676f-1338-4796-afd9-0711c24a950b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205A560D730>]}
+[0m16:51:56.501611 [info ] [MainThread]: Found 491 macros
+[0m16:51:56.502116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9eb4676f-1338-4796-afd9-0711c24a950b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205A540A900>]}
+[0m16:51:56.504902 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:51:56.506402 [debug] [MainThread]: Command end result
+[0m16:51:56.519390 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m16:51:56.520923 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m16:51:56.524054 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\goura\Desktop\dbtdm2\target\run_results.json
+[0m16:51:56.525216 [debug] [MainThread]: Command `dbt test` succeeded at 16:51:56.525216 after 4.56 seconds
+[0m16:51:56.525216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020588D05FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205A536B2C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020589729190>]}
+[0m16:51:56.525216 [debug] [MainThread]: Flushing usage events
+[0m16:51:57.169014 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:52:57.851616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002812A019FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028129FFE120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028129FFCAA0>]}
+
+
+============================== 16:52:57.853458 | efce3ec1-5920-4bb0-b83f-4f633307c84f ==============================
+[0m16:52:57.853458 [info ] [MainThread]: Running with dbt=1.9.4
+[0m16:52:57.853458 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\goura\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\goura\\Desktop\\dbtdm2\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt test', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:52:59.340418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'efce3ec1-5920-4bb0-b83f-4f633307c84f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002814526D1C0>]}
+[0m16:52:59.381272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'efce3ec1-5920-4bb0-b83f-4f633307c84f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028129E07380>]}
+[0m16:52:59.381272 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m16:52:59.729253 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m16:52:59.829894 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:52:59.831936 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:52:59.831936 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.crop_project
+[0m16:52:59.835419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'efce3ec1-5920-4bb0-b83f-4f633307c84f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028145A31040>]}
+[0m16:52:59.878785 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m16:52:59.881516 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m16:52:59.933017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'efce3ec1-5920-4bb0-b83f-4f633307c84f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028145D8B590>]}
+[0m16:52:59.934179 [info ] [MainThread]: Found 491 macros
+[0m16:52:59.934702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'efce3ec1-5920-4bb0-b83f-4f633307c84f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028145A53FB0>]}
+[0m16:52:59.936890 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:52:59.940153 [debug] [MainThread]: Command end result
+[0m16:52:59.962629 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m16:52:59.964303 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m16:52:59.968239 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\goura\Desktop\dbtdm2\target\run_results.json
+[0m16:52:59.970396 [debug] [MainThread]: Command `dbt test` succeeded at 16:52:59.969870 after 2.25 seconds
+[0m16:52:59.970396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028129B02060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028129B03290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028129B00D70>]}
+[0m16:52:59.970974 [debug] [MainThread]: Flushing usage events
+[0m16:53:00.637898 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:58:01.599945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188247C49E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018824342030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018826EF2030>]}
+
+
+============================== 16:58:01.604760 | a7298f92-587a-455a-b3b3-4a6e8e19f0fc ==============================
+[0m16:58:01.604760 [info ] [MainThread]: Running with dbt=1.9.4
+[0m16:58:01.605871 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\goura\\Desktop\\dbtdm2\\logs', 'profiles_dir': 'C:\\Users\\goura\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt test', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:58:03.709009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a7298f92-587a-455a-b3b3-4a6e8e19f0fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018842524D70>]}
+[0m16:58:03.750946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a7298f92-587a-455a-b3b3-4a6e8e19f0fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018842621D00>]}
+[0m16:58:03.754104 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m16:58:04.066245 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m16:58:04.145174 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:58:04.145174 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:58:04.145174 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.crop_project
+[0m16:58:04.145174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a7298f92-587a-455a-b3b3-4a6e8e19f0fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018842C34620>]}
+[0m16:58:04.180763 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m16:58:04.182766 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m16:58:04.214326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a7298f92-587a-455a-b3b3-4a6e8e19f0fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001884316B8F0>]}
+[0m16:58:04.214326 [info ] [MainThread]: Found 491 macros
+[0m16:58:04.214326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a7298f92-587a-455a-b3b3-4a6e8e19f0fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018843138260>]}
+[0m16:58:04.214326 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:58:04.214326 [debug] [MainThread]: Command end result
+[0m16:58:04.221803 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m16:58:04.221803 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m16:58:04.221803 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\goura\Desktop\dbtdm2\target\run_results.json
+[0m16:58:04.237596 [debug] [MainThread]: Command `dbt test` succeeded at 16:58:04.237596 after 2.77 seconds
+[0m16:58:04.237596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018826C8E5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188426F6300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018826DE2C30>]}
+[0m16:58:04.238683 [debug] [MainThread]: Flushing usage events
+[0m16:58:04.894274 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:59:36.988305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B091A7890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B0C6B9FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B0C6BBDA0>]}
+
+
+============================== 16:59:36.990863 | 7ebd218e-1cdf-4b4d-bd09-801646b49cc2 ==============================
+[0m16:59:36.990863 [info ] [MainThread]: Running with dbt=1.9.4
+[0m16:59:36.992878 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\goura\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\goura\\Desktop\\dbtdm2\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m16:59:37.007923 [info ] [MainThread]: dbt version: 1.9.4
+[0m16:59:37.007923 [info ] [MainThread]: python version: 3.12.0
+[0m16:59:37.007923 [info ] [MainThread]: python path: C:\Users\goura\AppData\Local\Programs\Python\Python312\python.exe
+[0m16:59:37.007923 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m16:59:38.266068 [info ] [MainThread]: Using profiles dir at C:\Users\goura\.dbt
+[0m16:59:38.266068 [info ] [MainThread]: Using profiles.yml file at C:\Users\goura\.dbt\profiles.yml
+[0m16:59:38.266068 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\goura\Desktop\dbtdm2\dbt_project.yml
+[0m16:59:38.266068 [info ] [MainThread]: adapter type: bigquery
+[0m16:59:38.266068 [info ] [MainThread]: adapter version: 1.9.1
+[0m16:59:38.356716 [info ] [MainThread]: Configuration:
+[0m16:59:38.356716 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:59:38.357864 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:59:38.357864 [info ] [MainThread]: Required dependencies:
+[0m16:59:38.357864 [debug] [MainThread]: Executing "git --help"
+[0m16:59:38.387864 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:59:38.389616 [debug] [MainThread]: STDERR: "b''"
+[0m16:59:38.389616 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:59:38.390822 [info ] [MainThread]: Connection:
+[0m16:59:38.391636 [info ] [MainThread]:   method: service-account
+[0m16:59:38.391636 [info ] [MainThread]:   database: dbt-crop
+[0m16:59:38.391636 [info ] [MainThread]:   execution_project: dbt-crop
+[0m16:59:38.391636 [info ] [MainThread]:   schema: dbtcrop
+[0m16:59:38.391636 [info ] [MainThread]:   location: US
+[0m16:59:38.391636 [info ] [MainThread]:   priority: interactive
+[0m16:59:38.394640 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:59:38.394640 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:59:38.394640 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:59:38.394640 [info ] [MainThread]:   job_retries: 1
+[0m16:59:38.394640 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:59:38.394640 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m16:59:38.394640 [info ] [MainThread]:   timeout_seconds: 300
+[0m16:59:38.397813 [info ] [MainThread]:   client_id: None
+[0m16:59:38.397813 [info ] [MainThread]:   token_uri: None
+[0m16:59:38.397813 [info ] [MainThread]:   dataproc_region: None
+[0m16:59:38.397813 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:59:38.397813 [info ] [MainThread]:   gcs_bucket: None
+[0m16:59:38.397813 [info ] [MainThread]:   dataproc_batch: None
+[0m16:59:38.397813 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m16:59:38.722639 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:59:38.722639 [debug] [MainThread]: On debug: select 1 as id
+[0m16:59:38.722639 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:59:39.759010 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:aa3b0c9a-16b2-4826-92c0-39cc517eb22a&page=queryresults
+[0m16:59:40.377206 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:59:40.377732 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:59:40.378780 [debug] [MainThread]: Command `dbt debug` succeeded at 16:59:40.378780 after 3.52 seconds
+[0m16:59:40.379296 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:59:40.379296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B0BF26630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B276E5340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B0CD28C20>]}
+[0m16:59:40.379859 [debug] [MainThread]: Flushing usage events
+[0m16:59:41.019938 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:04:03.828434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AC72EC0E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AC9EE6420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AC9D82D20>]}
+
+
+============================== 17:04:03.834422 | df2090cd-9b9a-495d-a161-48b52fc7b2e7 ==============================
+[0m17:04:03.834422 [info ] [MainThread]: Running with dbt=1.9.4
+[0m17:04:03.834422 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\goura\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\goura\\Desktop\\dbtdm2\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m17:04:05.294876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'df2090cd-9b9a-495d-a161-48b52fc7b2e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AE4DB8CB0>]}
+[0m17:04:05.339297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'df2090cd-9b9a-495d-a161-48b52fc7b2e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AE5ADD970>]}
+[0m17:04:05.339297 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m17:04:05.677473 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m17:04:05.744101 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:04:05.744101 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:04:05.744101 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.crop_project
+[0m17:04:05.750830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'df2090cd-9b9a-495d-a161-48b52fc7b2e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AE5CC0980>]}
+[0m17:04:05.778260 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m17:04:05.778260 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m17:04:05.805819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'df2090cd-9b9a-495d-a161-48b52fc7b2e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AE5E731A0>]}
+[0m17:04:05.805819 [info ] [MainThread]: Found 491 macros
+[0m17:04:05.805819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'df2090cd-9b9a-495d-a161-48b52fc7b2e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AC974C6E0>]}
+[0m17:04:05.805819 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m17:04:05.809774 [debug] [MainThread]: Command end result
+[0m17:04:05.811779 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m17:04:05.811779 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m17:04:05.828960 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\goura\Desktop\dbtdm2\target\run_results.json
+[0m17:04:05.828960 [debug] [MainThread]: Command `dbt run` succeeded at 17:04:05.828960 after 2.10 seconds
+[0m17:04:05.828960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AC9D82D20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AC9D82990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AC9D80D70>]}
+[0m17:04:05.828960 [debug] [MainThread]: Flushing usage events
+[0m17:04:06.492429 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:04:15.673850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025330B38FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025330AC1F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025333931100>]}
+
+
+============================== 17:04:15.673850 | b98fb407-1365-4715-b0ab-397dda6e9759 ==============================
+[0m17:04:15.673850 [info ] [MainThread]: Running with dbt=1.9.4
+[0m17:04:15.673850 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\goura\\Desktop\\dbtdm2\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\goura\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m17:04:17.019266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b98fb407-1365-4715-b0ab-397dda6e9759', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025333CFAA50>]}
+[0m17:04:17.063687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b98fb407-1365-4715-b0ab-397dda6e9759', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025333978470>]}
+[0m17:04:17.063687 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m17:04:17.406225 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m17:04:17.470571 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:04:17.470571 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:04:17.470571 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.crop_project
+[0m17:04:17.475990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b98fb407-1365-4715-b0ab-397dda6e9759', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002534F3AF020>]}
+[0m17:04:17.503705 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m17:04:17.506386 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m17:04:17.527242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b98fb407-1365-4715-b0ab-397dda6e9759', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002534F746DE0>]}
+[0m17:04:17.527242 [info ] [MainThread]: Found 491 macros
+[0m17:04:17.527242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b98fb407-1365-4715-b0ab-397dda6e9759', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002534F3AF350>]}
+[0m17:04:17.527242 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m17:04:17.527242 [debug] [MainThread]: Command end result
+[0m17:04:17.544346 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m17:04:17.545350 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m17:04:17.548346 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\goura\Desktop\dbtdm2\target\run_results.json
+[0m17:04:17.549143 [debug] [MainThread]: Command `dbt run` succeeded at 17:04:17.549143 after 1.99 seconds
+[0m17:04:17.550212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253338C0140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253339DACF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025333CA91F0>]}
+[0m17:04:17.550212 [debug] [MainThread]: Flushing usage events
+[0m17:04:18.224381 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:05:38.740176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219E3468FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219E5F62B40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219E5F61FA0>]}
+
+
+============================== 17:05:38.740176 | 709bcff2-5d5f-486b-bfa8-4a66bdbb2d5f ==============================
+[0m17:05:38.740176 [info ] [MainThread]: Running with dbt=1.9.4
+[0m17:05:38.740176 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\goura\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\goura\\Desktop\\dbtdm2\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:05:40.226972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '709bcff2-5d5f-486b-bfa8-4a66bdbb2d5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219810796A0>]}
+[0m17:05:40.274702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '709bcff2-5d5f-486b-bfa8-4a66bdbb2d5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021980FDF230>]}
+[0m17:05:40.274702 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m17:05:40.628632 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m17:05:40.656311 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m17:05:40.658637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '709bcff2-5d5f-486b-bfa8-4a66bdbb2d5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021982121D90>]}
+[0m17:05:41.194663 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m17:05:41.197682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '709bcff2-5d5f-486b-bfa8-4a66bdbb2d5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002198202BC50>]}
+[0m17:05:41.216349 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m17:05:41.229507 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m17:05:41.252956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '709bcff2-5d5f-486b-bfa8-4a66bdbb2d5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219820253A0>]}
+[0m17:05:41.252956 [info ] [MainThread]: Found 491 macros
+[0m17:05:41.252956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '709bcff2-5d5f-486b-bfa8-4a66bdbb2d5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002198214FEC0>]}
+[0m17:05:41.252956 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m17:05:41.256361 [debug] [MainThread]: Command end result
+[0m17:05:41.268666 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m17:05:41.270678 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m17:05:41.274711 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\goura\Desktop\dbtdm2\target\run_results.json
+[0m17:05:41.274711 [debug] [MainThread]: Command `dbt run` succeeded at 17:05:41.274711 after 2.66 seconds
+[0m17:05:41.275526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219E5D21010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219E5D21400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219E65CEA80>]}
+[0m17:05:41.275526 [debug] [MainThread]: Flushing usage events
+[0m17:05:41.944829 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:05:49.811444 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E557DBFC20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5567B3BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E559629E50>]}
+
+
+============================== 17:05:49.811444 | 10ae90d4-7e6c-4e20-b1fc-18c573aae049 ==============================
+[0m17:05:49.811444 [info ] [MainThread]: Running with dbt=1.9.4
+[0m17:05:49.811444 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\goura\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\goura\\Desktop\\dbtdm2\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m17:05:51.173468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '10ae90d4-7e6c-4e20-b1fc-18c573aae049', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E574BEBCE0>]}
+[0m17:05:51.208992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '10ae90d4-7e6c-4e20-b1fc-18c573aae049', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E574CED370>]}
+[0m17:05:51.208992 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m17:05:51.501740 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m17:05:51.581669 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:05:51.581669 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:05:51.581669 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m17:05:51.586756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '10ae90d4-7e6c-4e20-b1fc-18c573aae049', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E55A0A3C80>]}
+[0m17:05:51.610182 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m17:05:51.610182 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m17:05:51.636024 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '10ae90d4-7e6c-4e20-b1fc-18c573aae049', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E575DC3020>]}
+[0m17:05:51.636024 [info ] [MainThread]: Found 491 macros
+[0m17:05:51.637299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '10ae90d4-7e6c-4e20-b1fc-18c573aae049', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E55A0A2030>]}
+[0m17:05:51.638255 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m17:05:51.640303 [debug] [MainThread]: Command end result
+[0m17:05:51.655432 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m17:05:51.655432 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m17:05:51.659074 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\goura\Desktop\dbtdm2\target\run_results.json
+[0m17:05:51.661082 [debug] [MainThread]: Command `dbt run` succeeded at 17:05:51.661082 after 1.97 seconds
+[0m17:05:51.661082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E57540D160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E574E45550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E559F2C740>]}
+[0m17:05:51.661082 [debug] [MainThread]: Flushing usage events
+[0m17:05:52.284489 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:08:19.991906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C0787A80B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C07B1D1430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C07B1D23C0>]}
+
+
+============================== 17:08:19.997351 | 32532236-ca27-4a66-9330-4043b19443fb ==============================
+[0m17:08:19.997351 [info ] [MainThread]: Running with dbt=1.9.4
+[0m17:08:19.998357 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\goura\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:08:19.998357 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\goura\Desktop\dbtdm2\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:08:19.998357 [debug] [MainThread]: Command `dbt run` failed at 17:08:19.998357 after 0.14 seconds
+[0m17:08:19.998357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C0787A80B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C07B76EF00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C07B76D160>]}
+[0m17:08:20.000401 [debug] [MainThread]: Flushing usage events
+[0m17:08:20.655804 [debug] [MainThread]: An error was encountered while trying to flush usage events

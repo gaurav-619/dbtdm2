@@ -1,11 +1,19 @@
 version: 2
+sources:
+  - name: crop_data
+    database: dbt-crop
+    schema: crop_weather_ds
+    tables:
+      - name: crop_weather
 
 models:
-  - name: crop
+  - name: crop  # must match crop.sql
     description: "Crop production records from 2018 onwards"
     columns:
       - name: state
         description: "State where crop was grown"
+        tests:
+          - not_null
       - name: crop
         description: "Crop name"
       - name: year

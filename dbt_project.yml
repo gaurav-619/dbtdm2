@@ -31,6 +31,5 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   crop_project:
-    crop_live:
-      materialized: table
+    +materialized: table
 

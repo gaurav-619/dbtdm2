@@ -1,7 +1,16 @@
 SELECT
-  state,
   crop,
-  crop_year AS year,
-  production
-FROM {{ source('crop_data', 'crop_weather') }}
-WHERE crop_year >= 2018
+  crop_Year,
+  season,
+  state,
+  area,
+  production,
+  annual_rainfall,
+  fertilizer,
+  pesticide,
+  yield,
+  avg_temp,
+  min_temp,
+  max_temp,
+  precipitation
+FROM `dbt-crop.crop_weather_ds.crop_weather`

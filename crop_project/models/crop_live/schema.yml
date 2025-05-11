@@ -1,22 +1,180 @@
 version: 2
+
 sources:
   - name: crop_data
     database: dbt-crop
     schema: crop_weather_ds
     tables:
       - name: crop_weather
+      - name: live_aqi_data
 
 models:
-  - name: crop  # must match crop.sql
-    description: "Crop production records from 2018 onwards"
+  - name: stg_crop_weather
+    description: "Staging model for merged crop and weather data"
+    columns:
+      - name: crop
+        description: "Type of crop"
+      - name: crop_year
+        description: "Year of cultivation"
+      - name: season
+        description: "Season (e.g. Kharif, Rabi)"
+      - name: state
+        description: "Indian state"
+      - name: area
+        description: "Area cultivated (in hectares)"
+      - name: production
+        description: "Total crop production"
+      - name: annual_rainfall
+        description: "Annual rainfall (mm)"
+      - name: fertilizer
+        description: "Fertilizer used (kg/ha)"
+      - name: pesticide
+        description: "Pesticide used (kg/ha)"
+      - name: yield
+        description: "Crop yield (kg/ha)"
+      - name: avg_temp
+        description: "Average temperature (°C)"
+      - name: min_temp
+        description: "Minimum temperature (°C)"
+      - name: max_temp
+        description: "Maximum temperature (°C)"
+      - name: precipitation
+        description: "Total precipitation (mm)"
+
+  - name: stg_live
+    description: "Staging model for live AQI data"
     columns:
       - name: state
-        description: "State where crop was grown"
-        tests:
-          - not_null
+        description: "Indian state"
+      - name: latitude
+        description: "Latitude of measurement"
+      - name: longitude
+        description: "Longitude of measurement"
+      - name: timestamp
+        description: "Measurement timestamp"
+      - name: PM2_5
+        description: "Particulate matter 2.5"
+      - name: PM10
+        description: "Particulate matter 10"
+      - name: NO2
+        description: "Nitrogen dioxide"
+      - name: CO
+        description: "Carbon monoxide"
+      - name: O3
+        description: "Ozone"
+      - name: SO2
+        description: "Sulfur dioxide"
+
+  - name: dim_crop
+    description: "Dimension table for unique crops"
+    columns:
       - name: crop
         description: "Crop name"
-      - name: year
-        description: "Crop year (renamed from crop_year)"
+
+  - name: dim_seasons
+    description: "Dimension table for seasons"
+    columns:
+      - name: season
+        description: "Season name"
+
+  - name: dim_state
+    description: "Dimension table for states"
+    columns:
+      - name: state
+        description: "State name"
+
+  - name: fact_crop_weather
+    description: "Fact table for crop yield and weather metrics"
+    columns:
+      - name: state
+        description: "State of cultivation"
+      - name: crop
+        description: "Crop name"
+      - name: crop_year
+        description: "Year of cultivation"
+      - name: season
+        description: "Cultivation season"
+      - name: area
+        description: "Cultivated area"
       - name: production
-        description: "Amount of crop produced"
+        description: "Production quantity"
+      - name: yield
+        description: "Yield per hectare"
+      - name: annual_rainfall
+        description: "Annual rainfall in mm"
+      - name: fertilizer
+        description: "Fertilizer used"
+      - name: pesticide
+        description: "Pesticide used"
+      - name: avg_temp
+        description: "Average temperature"
+      - name: min_temp
+        description: "Minimum temperature"
+      - name: max_temp
+        description: "Maximum temperature"
+      - name: precipitation
+        description: "Total precipitation"
+
+  - name: fact_aqi
+    description: "Fact table for latest AQI readings"
+    columns:
+      - name: state
+        description: "State of AQI reading"
+      - name: timestamp
+        description: "Timestamp of reading"
+      - name: pm2_5
+        description: "PM2.5 level"
+      - name: pm10
+        description: "PM10 level"
+      - name: no2
+        description: "NO2 level"
+      - name: co
+        description: "CO level"
+      - name: o3
+        description: "Ozone level"
+      - name: so2
+        description: "Sulfur dioxide level"
+
+  - name: int_crop_weather_aqi
+    description: "Intermediate table joining crop-weather data with latest AQI readings"
+    columns:
+      - name: state
+        description: "State name"
+      - name: crop
+        description: "Crop name"
+      - name: crop_year
+        description: "Crop year"
+      - name: season
+        description: "Cultivation season"
+      - name: area
+        description: "Area of cultivation"
+      - name: production
+        description: "Production quantity"
+      - name: yield
+        description: "Yield per hectare"
+      - name: annual_rainfall
+        description: "Annual rainfall"
+      - name: fertilizer
+        description: "Fertilizer use"
+      - name: pesticide
+        description: "Pesticide use"
+      - name: avg_temp
+        description: "Average temperature"
+      - name: min_temp
+        description: "Minimum temperature"
+      - name: max_temp
+        description: "Maximum temperature"
+      - name: precipitation
+        description: "Total precipitation"
+      - name: pm2_5
+        description: "PM2.5 level"
+      - name: pm10
+        description: "PM10 level"
+      - name: no2
+        description: "NO2 level"
+      - name: co
+        description: "CO level"
+      - name: o3
+        description: "Ozone level"
+      - name: so2
+        description: "SO2 level"

@@ -2455,3 +2455,1119 @@ LEFT JOIN latest_aqi aqi ON cw.state = aqi.state
 [0m08:56:02.026526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B015F68EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B015F69EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B015F68C20>]}
 [0m08:56:02.026526 [debug] [MainThread]: Flushing usage events
 [0m08:56:03.046966 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:45:42.366348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDC9B02A80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDC9771820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDC94FAF00>]}
+
+
+============================== 09:45:42.366348 | e352ff13-e73b-4d92-b4c4-6e5275dd0f92 ==============================
+[0m09:45:42.366348 [info ] [MainThread]: Running with dbt=1.9.4
+[0m09:45:42.366348 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\goura\\Desktop\\dbtdm2\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\goura\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m09:45:47.636161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e352ff13-e73b-4d92-b4c4-6e5275dd0f92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDC9E3B110>]}
+[0m09:45:47.708047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e352ff13-e73b-4d92-b4c4-6e5275dd0f92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDE540B740>]}
+[0m09:45:47.708047 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m09:45:48.383093 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m09:45:48.498329 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m09:45:48.498329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e352ff13-e73b-4d92-b4c4-6e5275dd0f92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDE5B80200>]}
+[0m09:45:52.011742 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.crop_live
+- models.dimensions
+- models.facts
+- models.staging
+- models.intermediate
+[0m09:45:52.027823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e352ff13-e73b-4d92-b4c4-6e5275dd0f92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDE5CAF7D0>]}
+[0m09:45:52.106848 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m09:45:52.129342 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m09:45:52.170996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e352ff13-e73b-4d92-b4c4-6e5275dd0f92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDE5C27320>]}
+[0m09:45:52.170996 [info ] [MainThread]: Found 9 models, 2 sources, 491 macros
+[0m09:45:52.170996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e352ff13-e73b-4d92-b4c4-6e5275dd0f92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDE5C27E00>]}
+[0m09:45:52.173866 [info ] [MainThread]: 
+[0m09:45:52.173866 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:45:52.173866 [info ] [MainThread]: 
+[0m09:45:52.173866 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:45:52.176852 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-crop'
+[0m09:45:52.176852 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:45:53.493560 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-crop_dbtcrop'
+[0m09:45:53.493560 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:45:54.476087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e352ff13-e73b-4d92-b4c4-6e5275dd0f92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDE5B71970>]}
+[0m09:45:54.476087 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:45:54.540166 [debug] [Thread-1 (]: Began running node model.crop_project.stg_crop_weather
+[0m09:45:54.540166 [debug] [Thread-2 (]: Began running node model.crop_project.stg_live
+[0m09:45:54.540166 [info ] [Thread-1 (]: 1 of 9 START sql view model dbtcrop.stg_crop_weather ........................... [RUN]
+[0m09:45:54.540166 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.crop_project.stg_crop_weather'
+[0m09:45:54.540166 [debug] [Thread-1 (]: Began compiling node model.crop_project.stg_crop_weather
+[0m09:45:54.540166 [debug] [Thread-1 (]: Writing injected SQL for node "model.crop_project.stg_crop_weather"
+[0m09:45:54.540166 [info ] [Thread-2 (]: 2 of 9 START sql view model dbtcrop.stg_live ................................... [RUN]
+[0m09:45:54.554932 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.crop_project.stg_live'
+[0m09:45:54.554932 [debug] [Thread-1 (]: Began executing node model.crop_project.stg_crop_weather
+[0m09:45:54.554932 [debug] [Thread-2 (]: Began compiling node model.crop_project.stg_live
+[0m09:45:54.571157 [debug] [Thread-2 (]: Writing injected SQL for node "model.crop_project.stg_live"
+[0m09:45:54.571157 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m09:45:54.614972 [debug] [Thread-2 (]: Began executing node model.crop_project.stg_live
+[0m09:45:54.619171 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m09:45:54.714376 [debug] [Thread-1 (]: Compilation Error in model stg_crop_weather (models\crop_live\staging\stg_crop_weather.sql)
+  Trying to create view `dbt-crop`.`dbtcrop`.`stg_crop_weather`, but it currently exists as a table. Either drop `dbt-crop`.`dbtcrop`.`stg_crop_weather` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_crop_weather (models\crop_live\staging\stg_crop_weather.sql)
+[0m09:45:54.723984 [debug] [Thread-2 (]: Compilation Error in model stg_live (models\crop_live\staging\stg_live.sql)
+  Trying to create view `dbt-crop`.`dbtcrop`.`stg_live`, but it currently exists as a table. Either drop `dbt-crop`.`dbtcrop`.`stg_live` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_live (models\crop_live\staging\stg_live.sql)
+[0m09:45:54.723984 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e352ff13-e73b-4d92-b4c4-6e5275dd0f92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDE6DEB200>]}
+[0m09:45:54.723984 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e352ff13-e73b-4d92-b4c4-6e5275dd0f92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDC9E384A0>]}
+[0m09:45:54.723984 [error] [Thread-1 (]: 1 of 9 ERROR creating sql view model dbtcrop.stg_crop_weather .................. [[31mERROR[0m in 0.18s]
+[0m09:45:54.723984 [debug] [Thread-1 (]: Finished running node model.crop_project.stg_crop_weather
+[0m09:45:54.723984 [error] [Thread-2 (]: 2 of 9 ERROR creating sql view model dbtcrop.stg_live .......................... [[31mERROR[0m in 0.17s]
+[0m09:45:54.730101 [debug] [Thread-7 (]: Marking all children of 'model.crop_project.stg_crop_weather' to be skipped because of status 'error'.  Reason: Compilation Error in model stg_crop_weather (models\crop_live\staging\stg_crop_weather.sql)
+  Trying to create view `dbt-crop`.`dbtcrop`.`stg_crop_weather`, but it currently exists as a table. Either drop `dbt-crop`.`dbtcrop`.`stg_crop_weather` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_crop_weather (models\crop_live\staging\stg_crop_weather.sql).
+[0m09:45:54.730101 [debug] [Thread-2 (]: Finished running node model.crop_project.stg_live
+[0m09:45:54.730101 [debug] [Thread-7 (]: Marking all children of 'model.crop_project.stg_live' to be skipped because of status 'error'.  Reason: Compilation Error in model stg_live (models\crop_live\staging\stg_live.sql)
+  Trying to create view `dbt-crop`.`dbtcrop`.`stg_live`, but it currently exists as a table. Either drop `dbt-crop`.`dbtcrop`.`stg_live` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_live (models\crop_live\staging\stg_live.sql).
+[0m09:45:54.730101 [debug] [Thread-4 (]: Began running node model.crop_project.crop_weather
+[0m09:45:54.730101 [debug] [Thread-3 (]: Began running node model.crop_project.dim_crop
+[0m09:45:54.730101 [debug] [Thread-1 (]: Began running node model.crop_project.dim_seasons
+[0m09:45:54.730101 [info ] [Thread-4 (]: 3 of 9 SKIP relation dbtcrop.crop_weather ...................................... [[33mSKIP[0m]
+[0m09:45:54.730101 [debug] [Thread-2 (]: Began running node model.crop_project.dim_state
+[0m09:45:54.730101 [info ] [Thread-3 (]: 4 of 9 SKIP relation dbtcrop.dim_crop .......................................... [[33mSKIP[0m]
+[0m09:45:54.730101 [debug] [Thread-4 (]: Finished running node model.crop_project.crop_weather
+[0m09:45:54.730101 [info ] [Thread-1 (]: 5 of 9 SKIP relation dbtcrop.dim_seasons ....................................... [[33mSKIP[0m]
+[0m09:45:54.730101 [debug] [Thread-3 (]: Finished running node model.crop_project.dim_crop
+[0m09:45:54.730101 [info ] [Thread-2 (]: 6 of 9 SKIP relation dbtcrop.dim_state ......................................... [[33mSKIP[0m]
+[0m09:45:54.730101 [debug] [Thread-4 (]: Began running node model.crop_project.fact_aqi
+[0m09:45:54.739419 [debug] [Thread-1 (]: Finished running node model.crop_project.dim_seasons
+[0m09:45:54.739419 [debug] [Thread-3 (]: Began running node model.crop_project.fact_crop_weather
+[0m09:45:54.739419 [debug] [Thread-2 (]: Finished running node model.crop_project.dim_state
+[0m09:45:54.739419 [info ] [Thread-4 (]: 7 of 9 SKIP relation dbtcrop.fact_aqi .......................................... [[33mSKIP[0m]
+[0m09:45:54.739419 [info ] [Thread-3 (]: 8 of 9 SKIP relation dbtcrop.fact_crop_weather ................................. [[33mSKIP[0m]
+[0m09:45:54.739419 [debug] [Thread-4 (]: Finished running node model.crop_project.fact_aqi
+[0m09:45:54.739419 [debug] [Thread-3 (]: Finished running node model.crop_project.fact_crop_weather
+[0m09:45:54.739419 [debug] [Thread-1 (]: Began running node model.crop_project.int_crop_weather_aqi
+[0m09:45:54.739419 [info ] [Thread-1 (]: 9 of 9 SKIP relation dbtcrop.int_crop_weather_aqi .............................. [[33mSKIP[0m]
+[0m09:45:54.739419 [debug] [Thread-1 (]: Finished running node model.crop_project.int_crop_weather_aqi
+[0m09:45:54.746051 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:45:54.778094 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:45:54.778094 [debug] [MainThread]: Connection 'list_dbt-crop' was properly closed.
+[0m09:45:54.778094 [debug] [MainThread]: Connection 'list_dbt-crop_dbtcrop' was properly closed.
+[0m09:45:54.778094 [debug] [MainThread]: Connection 'model.crop_project.stg_crop_weather' was properly closed.
+[0m09:45:54.778094 [debug] [MainThread]: Connection 'model.crop_project.stg_live' was properly closed.
+[0m09:45:54.778094 [info ] [MainThread]: 
+[0m09:45:54.778094 [info ] [MainThread]: Finished running 9 view models in 0 hours 0 minutes and 2.60 seconds (2.60s).
+[0m09:45:54.778094 [debug] [MainThread]: Command end result
+[0m09:45:54.802109 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m09:45:54.804116 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m09:45:54.810145 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\goura\Desktop\dbtdm2\target\run_results.json
+[0m09:45:54.810145 [info ] [MainThread]: 
+[0m09:45:54.810145 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m09:45:54.810145 [info ] [MainThread]: 
+[0m09:45:54.810145 [error] [MainThread]:   Compilation Error in model stg_crop_weather (models\crop_live\staging\stg_crop_weather.sql)
+  Trying to create view `dbt-crop`.`dbtcrop`.`stg_crop_weather`, but it currently exists as a table. Either drop `dbt-crop`.`dbtcrop`.`stg_crop_weather` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_crop_weather (models\crop_live\staging\stg_crop_weather.sql)
+[0m09:45:54.810145 [info ] [MainThread]: 
+[0m09:45:54.810145 [error] [MainThread]:   Compilation Error in model stg_live (models\crop_live\staging\stg_live.sql)
+  Trying to create view `dbt-crop`.`dbtcrop`.`stg_live`, but it currently exists as a table. Either drop `dbt-crop`.`dbtcrop`.`stg_live` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_live (models\crop_live\staging\stg_live.sql)
+[0m09:45:54.810145 [info ] [MainThread]: 
+[0m09:45:54.810145 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=7 TOTAL=9
+[0m09:45:54.810145 [debug] [MainThread]: Command `dbt run` failed at 09:45:54.810145 after 12.59 seconds
+[0m09:45:54.810145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDC79E16D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDC94D2F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDC9DC3FE0>]}
+[0m09:45:54.818761 [debug] [MainThread]: Flushing usage events
+[0m09:45:55.559015 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:53:18.116250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB715B3BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB73EE7D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB73BDA900>]}
+
+
+============================== 09:53:18.123498 | ad2acf11-7a46-4093-8cf9-4e361ac6ad90 ==============================
+[0m09:53:18.123498 [info ] [MainThread]: Running with dbt=1.9.4
+[0m09:53:18.123498 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\goura\\.dbt', 'log_path': 'C:\\Users\\goura\\Desktop\\dbtdm2\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:53:18.127631 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'crop_live'
+[0m09:53:18.127631 [debug] [MainThread]: Command `dbt run` failed at 09:53:18.127631 after 0.14 seconds
+[0m09:53:18.127631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB74881E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB73C67C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB73C65820>]}
+[0m09:53:18.127631 [debug] [MainThread]: Flushing usage events
+[0m09:53:18.789870 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:53:59.948242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA42C4BBF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA46170BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA46171FD0>]}
+
+
+============================== 09:53:59.948242 | 1a179f78-cefa-4ba8-b454-8706556d038b ==============================
+[0m09:53:59.948242 [info ] [MainThread]: Running with dbt=1.9.4
+[0m09:53:59.948242 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\goura\\.dbt', 'log_path': 'C:\\Users\\goura\\Desktop\\dbtdm2\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m09:54:01.261044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1a179f78-cefa-4ba8-b454-8706556d038b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA61749FD0>]}
+[0m09:54:01.288350 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1a179f78-cefa-4ba8-b454-8706556d038b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA611E61B0>]}
+[0m09:54:01.288350 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m09:54:01.579504 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m09:54:01.703104 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:54:01.704104 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:54:01.710406 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.crop_live
+- models.intermediate
+- models.dimensions
+- models.facts
+- models.staging
+[0m09:54:01.735152 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1a179f78-cefa-4ba8-b454-8706556d038b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA620B0980>]}
+[0m09:54:01.790764 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m09:54:01.795972 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m09:54:01.824044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1a179f78-cefa-4ba8-b454-8706556d038b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA61ED50A0>]}
+[0m09:54:01.825044 [info ] [MainThread]: Found 9 models, 2 sources, 491 macros
+[0m09:54:01.825044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1a179f78-cefa-4ba8-b454-8706556d038b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA621859D0>]}
+[0m09:54:01.828985 [info ] [MainThread]: 
+[0m09:54:01.830056 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:54:01.830056 [info ] [MainThread]: 
+[0m09:54:01.830056 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:54:01.830056 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-crop'
+[0m09:54:01.830056 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:54:02.754616 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-crop_dbtcrop'
+[0m09:54:02.754616 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:54:03.585047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1a179f78-cefa-4ba8-b454-8706556d038b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA60FF4DA0>]}
+[0m09:54:03.585047 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:54:03.619014 [debug] [Thread-1 (]: Began running node model.crop_project.stg_crop_weather
+[0m09:54:03.619014 [info ] [Thread-1 (]: 1 of 9 START sql view model dbtcrop.stg_crop_weather ........................... [RUN]
+[0m09:54:03.620301 [debug] [Thread-2 (]: Began running node model.crop_project.stg_live
+[0m09:54:03.620301 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.crop_project.stg_crop_weather'
+[0m09:54:03.621301 [info ] [Thread-2 (]: 2 of 9 START sql view model dbtcrop.stg_live ................................... [RUN]
+[0m09:54:03.621301 [debug] [Thread-1 (]: Began compiling node model.crop_project.stg_crop_weather
+[0m09:54:03.621301 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.crop_project.stg_live'
+[0m09:54:03.628317 [debug] [Thread-1 (]: Writing injected SQL for node "model.crop_project.stg_crop_weather"
+[0m09:54:03.628317 [debug] [Thread-2 (]: Began compiling node model.crop_project.stg_live
+[0m09:54:03.630318 [debug] [Thread-2 (]: Writing injected SQL for node "model.crop_project.stg_live"
+[0m09:54:03.631317 [debug] [Thread-1 (]: Began executing node model.crop_project.stg_crop_weather
+[0m09:54:03.646897 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m09:54:03.676316 [debug] [Thread-2 (]: Began executing node model.crop_project.stg_live
+[0m09:54:03.678514 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m09:54:03.712013 [debug] [Thread-2 (]: Compilation Error in model stg_live (models\crop_live\staging\stg_live.sql)
+  Trying to create view `dbt-crop`.`dbtcrop`.`stg_live`, but it currently exists as a table. Either drop `dbt-crop`.`dbtcrop`.`stg_live` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_live (models\crop_live\staging\stg_live.sql)
+[0m09:54:03.714008 [debug] [Thread-1 (]: Compilation Error in model stg_crop_weather (models\crop_live\staging\stg_crop_weather.sql)
+  Trying to create view `dbt-crop`.`dbtcrop`.`stg_crop_weather`, but it currently exists as a table. Either drop `dbt-crop`.`dbtcrop`.`stg_crop_weather` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_crop_weather (models\crop_live\staging\stg_crop_weather.sql)
+[0m09:54:03.714008 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1a179f78-cefa-4ba8-b454-8706556d038b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA61ECE840>]}
+[0m09:54:03.714994 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1a179f78-cefa-4ba8-b454-8706556d038b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA45A95340>]}
+[0m09:54:03.714994 [error] [Thread-2 (]: 2 of 9 ERROR creating sql view model dbtcrop.stg_live .......................... [[31mERROR[0m in 0.09s]
+[0m09:54:03.715992 [debug] [Thread-2 (]: Finished running node model.crop_project.stg_live
+[0m09:54:03.715992 [error] [Thread-1 (]: 1 of 9 ERROR creating sql view model dbtcrop.stg_crop_weather .................. [[31mERROR[0m in 0.09s]
+[0m09:54:03.715992 [debug] [Thread-1 (]: Finished running node model.crop_project.stg_crop_weather
+[0m09:54:03.715992 [debug] [Thread-7 (]: Marking all children of 'model.crop_project.stg_live' to be skipped because of status 'error'.  Reason: Compilation Error in model stg_live (models\crop_live\staging\stg_live.sql)
+  Trying to create view `dbt-crop`.`dbtcrop`.`stg_live`, but it currently exists as a table. Either drop `dbt-crop`.`dbtcrop`.`stg_live` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_live (models\crop_live\staging\stg_live.sql).
+[0m09:54:03.715992 [debug] [Thread-7 (]: Marking all children of 'model.crop_project.stg_crop_weather' to be skipped because of status 'error'.  Reason: Compilation Error in model stg_crop_weather (models\crop_live\staging\stg_crop_weather.sql)
+  Trying to create view `dbt-crop`.`dbtcrop`.`stg_crop_weather`, but it currently exists as a table. Either drop `dbt-crop`.`dbtcrop`.`stg_crop_weather` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_crop_weather (models\crop_live\staging\stg_crop_weather.sql).
+[0m09:54:03.715992 [debug] [Thread-4 (]: Began running node model.crop_project.crop_weather
+[0m09:54:03.715992 [debug] [Thread-3 (]: Began running node model.crop_project.dim_crop
+[0m09:54:03.715992 [debug] [Thread-2 (]: Began running node model.crop_project.dim_seasons
+[0m09:54:03.715992 [info ] [Thread-4 (]: 3 of 9 SKIP relation dbtcrop.crop_weather ...................................... [[33mSKIP[0m]
+[0m09:54:03.715992 [debug] [Thread-1 (]: Began running node model.crop_project.dim_state
+[0m09:54:03.715992 [debug] [Thread-4 (]: Finished running node model.crop_project.crop_weather
+[0m09:54:03.715992 [info ] [Thread-3 (]: 4 of 9 SKIP relation dbtcrop.dim_crop .......................................... [[33mSKIP[0m]
+[0m09:54:03.715992 [info ] [Thread-2 (]: 5 of 9 SKIP relation dbtcrop.dim_seasons ....................................... [[33mSKIP[0m]
+[0m09:54:03.722931 [info ] [Thread-1 (]: 6 of 9 SKIP relation dbtcrop.dim_state ......................................... [[33mSKIP[0m]
+[0m09:54:03.723311 [debug] [Thread-4 (]: Began running node model.crop_project.fact_aqi
+[0m09:54:03.723311 [debug] [Thread-3 (]: Finished running node model.crop_project.dim_crop
+[0m09:54:03.724317 [debug] [Thread-2 (]: Finished running node model.crop_project.dim_seasons
+[0m09:54:03.724317 [debug] [Thread-1 (]: Finished running node model.crop_project.dim_state
+[0m09:54:03.725314 [debug] [Thread-3 (]: Began running node model.crop_project.fact_crop_weather
+[0m09:54:03.724317 [info ] [Thread-4 (]: 7 of 9 SKIP relation dbtcrop.fact_aqi .......................................... [[33mSKIP[0m]
+[0m09:54:03.725314 [debug] [Thread-4 (]: Finished running node model.crop_project.fact_aqi
+[0m09:54:03.725314 [info ] [Thread-3 (]: 8 of 9 SKIP relation dbtcrop.fact_crop_weather ................................. [[33mSKIP[0m]
+[0m09:54:03.726315 [debug] [Thread-3 (]: Finished running node model.crop_project.fact_crop_weather
+[0m09:54:03.726315 [debug] [Thread-2 (]: Began running node model.crop_project.int_crop_weather_aqi
+[0m09:54:03.727316 [info ] [Thread-2 (]: 9 of 9 SKIP relation dbtcrop.int_crop_weather_aqi .............................. [[33mSKIP[0m]
+[0m09:54:03.727316 [debug] [Thread-2 (]: Finished running node model.crop_project.int_crop_weather_aqi
+[0m09:54:03.728318 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:54:03.760334 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:54:03.760334 [debug] [MainThread]: Connection 'list_dbt-crop' was properly closed.
+[0m09:54:03.761336 [debug] [MainThread]: Connection 'list_dbt-crop_dbtcrop' was properly closed.
+[0m09:54:03.761336 [debug] [MainThread]: Connection 'model.crop_project.stg_crop_weather' was properly closed.
+[0m09:54:03.761336 [debug] [MainThread]: Connection 'model.crop_project.stg_live' was properly closed.
+[0m09:54:03.762421 [info ] [MainThread]: 
+[0m09:54:03.762421 [info ] [MainThread]: Finished running 9 view models in 0 hours 0 minutes and 1.93 seconds (1.93s).
+[0m09:54:03.763871 [debug] [MainThread]: Command end result
+[0m09:54:03.780708 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m09:54:03.783848 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m09:54:03.787965 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\goura\Desktop\dbtdm2\target\run_results.json
+[0m09:54:03.787965 [info ] [MainThread]: 
+[0m09:54:03.787965 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m09:54:03.791982 [info ] [MainThread]: 
+[0m09:54:03.791982 [error] [MainThread]:   Compilation Error in model stg_live (models\crop_live\staging\stg_live.sql)
+  Trying to create view `dbt-crop`.`dbtcrop`.`stg_live`, but it currently exists as a table. Either drop `dbt-crop`.`dbtcrop`.`stg_live` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_live (models\crop_live\staging\stg_live.sql)
+[0m09:54:03.792990 [info ] [MainThread]: 
+[0m09:54:03.792990 [error] [MainThread]:   Compilation Error in model stg_crop_weather (models\crop_live\staging\stg_crop_weather.sql)
+  Trying to create view `dbt-crop`.`dbtcrop`.`stg_crop_weather`, but it currently exists as a table. Either drop `dbt-crop`.`dbtcrop`.`stg_crop_weather` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_crop_weather (models\crop_live\staging\stg_crop_weather.sql)
+[0m09:54:03.793991 [info ] [MainThread]: 
+[0m09:54:03.793991 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=7 TOTAL=9
+[0m09:54:03.794990 [debug] [MainThread]: Command `dbt run` failed at 09:54:03.794990 after 3.95 seconds
+[0m09:54:03.794990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA46341940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA611A83E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA462402C0>]}
+[0m09:54:03.794990 [debug] [MainThread]: Flushing usage events
+[0m09:54:04.436332 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:56:12.828422 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C284C46090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C28509D100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C284C46120>]}
+
+
+============================== 09:56:12.831725 | e65bc380-cfaa-420c-8643-2dbbdf82ccaa ==============================
+[0m09:56:12.831725 [info ] [MainThread]: Running with dbt=1.9.4
+[0m09:56:12.831725 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\goura\\Desktop\\dbtdm2\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\goura\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt build', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:56:14.152399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e65bc380-cfaa-420c-8643-2dbbdf82ccaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C2A0073170>]}
+[0m09:56:14.200453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e65bc380-cfaa-420c-8643-2dbbdf82ccaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C2A026E720>]}
+[0m09:56:14.200453 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m09:56:14.421988 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m09:56:14.469661 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m09:56:14.469661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e65bc380-cfaa-420c-8643-2dbbdf82ccaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C2A1373860>]}
+[0m09:56:15.328849 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.crop_live
+- models.dimensions
+- models.facts
+- models.intermediate
+- models.staging
+[0m09:56:15.337330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e65bc380-cfaa-420c-8643-2dbbdf82ccaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C2A1267350>]}
+[0m09:56:15.384966 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m09:56:15.384966 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m09:56:15.456060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e65bc380-cfaa-420c-8643-2dbbdf82ccaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C2A1283230>]}
+[0m09:56:15.457064 [info ] [MainThread]: Found 9 models, 2 sources, 491 macros
+[0m09:56:15.458964 [info ] [MainThread]: 
+[0m09:56:15.458964 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:56:15.458964 [info ] [MainThread]: 
+[0m09:56:15.458964 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:56:15.462681 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-crop'
+[0m09:56:15.462681 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:56:16.850113 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-crop_dbtcrop'
+[0m09:56:16.851559 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:56:17.689942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e65bc380-cfaa-420c-8643-2dbbdf82ccaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C2A14FC5C0>]}
+[0m09:56:17.689942 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:56:17.725877 [debug] [Thread-2 (]: Began running node model.crop_project.stg_live
+[0m09:56:17.725877 [debug] [Thread-1 (]: Began running node model.crop_project.stg_crop_weather
+[0m09:56:17.725877 [info ] [Thread-2 (]: 2 of 9 START sql view model dbtcrop.stg_live ................................... [RUN]
+[0m09:56:17.725877 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.crop_project.stg_live'
+[0m09:56:17.725877 [info ] [Thread-1 (]: 1 of 9 START sql view model dbtcrop.stg_crop_weather ........................... [RUN]
+[0m09:56:17.725877 [debug] [Thread-2 (]: Began compiling node model.crop_project.stg_live
+[0m09:56:17.725877 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.crop_project.stg_crop_weather'
+[0m09:56:17.725877 [debug] [Thread-2 (]: Writing injected SQL for node "model.crop_project.stg_live"
+[0m09:56:17.725877 [debug] [Thread-1 (]: Began compiling node model.crop_project.stg_crop_weather
+[0m09:56:17.725877 [debug] [Thread-1 (]: Writing injected SQL for node "model.crop_project.stg_crop_weather"
+[0m09:56:17.725877 [debug] [Thread-2 (]: Began executing node model.crop_project.stg_live
+[0m09:56:17.725877 [debug] [Thread-1 (]: Began executing node model.crop_project.stg_crop_weather
+[0m09:56:17.749447 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m09:56:17.755496 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m09:56:17.815013 [debug] [Thread-2 (]: Compilation Error in model stg_live (models\crop_live\staging\stg_live.sql)
+  Trying to create view `dbt-crop`.`dbtcrop`.`stg_live`, but it currently exists as a table. Either drop `dbt-crop`.`dbtcrop`.`stg_live` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_live (models\crop_live\staging\stg_live.sql)
+[0m09:56:17.820097 [debug] [Thread-1 (]: Compilation Error in model stg_crop_weather (models\crop_live\staging\stg_crop_weather.sql)
+  Trying to create view `dbt-crop`.`dbtcrop`.`stg_crop_weather`, but it currently exists as a table. Either drop `dbt-crop`.`dbtcrop`.`stg_crop_weather` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_crop_weather (models\crop_live\staging\stg_crop_weather.sql)
+[0m09:56:17.820097 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e65bc380-cfaa-420c-8643-2dbbdf82ccaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C2A265E540>]}
+[0m09:56:17.820097 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e65bc380-cfaa-420c-8643-2dbbdf82ccaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C2A27E6D80>]}
+[0m09:56:17.820097 [error] [Thread-2 (]: 2 of 9 ERROR creating sql view model dbtcrop.stg_live .......................... [[31mERROR[0m in 0.09s]
+[0m09:56:17.820097 [debug] [Thread-2 (]: Finished running node model.crop_project.stg_live
+[0m09:56:17.820097 [debug] [Thread-7 (]: Marking all children of 'model.crop_project.stg_live' to be skipped because of status 'error'.  Reason: Compilation Error in model stg_live (models\crop_live\staging\stg_live.sql)
+  Trying to create view `dbt-crop`.`dbtcrop`.`stg_live`, but it currently exists as a table. Either drop `dbt-crop`.`dbtcrop`.`stg_live` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_live (models\crop_live\staging\stg_live.sql).
+[0m09:56:17.820097 [debug] [Thread-4 (]: Began running node model.crop_project.fact_aqi
+[0m09:56:17.820097 [error] [Thread-1 (]: 1 of 9 ERROR creating sql view model dbtcrop.stg_crop_weather .................. [[31mERROR[0m in 0.09s]
+[0m09:56:17.820097 [debug] [Thread-1 (]: Finished running node model.crop_project.stg_crop_weather
+[0m09:56:17.820097 [info ] [Thread-4 (]: 3 of 9 SKIP relation dbtcrop.fact_aqi .......................................... [[33mSKIP[0m]
+[0m09:56:17.820097 [debug] [Thread-7 (]: Marking all children of 'model.crop_project.stg_crop_weather' to be skipped because of status 'error'.  Reason: Compilation Error in model stg_crop_weather (models\crop_live\staging\stg_crop_weather.sql)
+  Trying to create view `dbt-crop`.`dbtcrop`.`stg_crop_weather`, but it currently exists as a table. Either drop `dbt-crop`.`dbtcrop`.`stg_crop_weather` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_crop_weather (models\crop_live\staging\stg_crop_weather.sql).
+[0m09:56:17.820097 [debug] [Thread-4 (]: Finished running node model.crop_project.fact_aqi
+[0m09:56:17.820097 [debug] [Thread-2 (]: Began running node model.crop_project.crop_weather
+[0m09:56:17.820097 [debug] [Thread-3 (]: Began running node model.crop_project.dim_crop
+[0m09:56:17.820097 [debug] [Thread-4 (]: Began running node model.crop_project.dim_seasons
+[0m09:56:17.820097 [debug] [Thread-1 (]: Began running node model.crop_project.dim_state
+[0m09:56:17.820097 [debug] [Thread-7 (]: Marking all children of 'model.crop_project.fact_aqi' to be skipped because of status 'skipped'. 
+[0m09:56:17.820097 [info ] [Thread-2 (]: 4 of 9 SKIP relation dbtcrop.crop_weather ...................................... [[33mSKIP[0m]
+[0m09:56:17.820097 [info ] [Thread-3 (]: 5 of 9 SKIP relation dbtcrop.dim_crop .......................................... [[33mSKIP[0m]
+[0m09:56:17.820097 [info ] [Thread-4 (]: 6 of 9 SKIP relation dbtcrop.dim_seasons ....................................... [[33mSKIP[0m]
+[0m09:56:17.820097 [info ] [Thread-1 (]: 7 of 9 SKIP relation dbtcrop.dim_state ......................................... [[33mSKIP[0m]
+[0m09:56:17.830672 [debug] [Thread-2 (]: Finished running node model.crop_project.crop_weather
+[0m09:56:17.830672 [debug] [Thread-3 (]: Finished running node model.crop_project.dim_crop
+[0m09:56:17.831691 [debug] [Thread-4 (]: Finished running node model.crop_project.dim_seasons
+[0m09:56:17.831691 [debug] [Thread-1 (]: Finished running node model.crop_project.dim_state
+[0m09:56:17.832691 [debug] [Thread-2 (]: Began running node model.crop_project.fact_crop_weather
+[0m09:56:17.832691 [debug] [Thread-7 (]: Marking all children of 'model.crop_project.crop_weather' to be skipped because of status 'skipped'. 
+[0m09:56:17.832691 [debug] [Thread-7 (]: Marking all children of 'model.crop_project.dim_crop' to be skipped because of status 'skipped'. 
+[0m09:56:17.832691 [info ] [Thread-2 (]: 8 of 9 SKIP relation dbtcrop.fact_crop_weather ................................. [[33mSKIP[0m]
+[0m09:56:17.833690 [debug] [Thread-7 (]: Marking all children of 'model.crop_project.dim_seasons' to be skipped because of status 'skipped'. 
+[0m09:56:17.833690 [debug] [Thread-2 (]: Finished running node model.crop_project.fact_crop_weather
+[0m09:56:17.834690 [debug] [Thread-7 (]: Marking all children of 'model.crop_project.dim_state' to be skipped because of status 'skipped'. 
+[0m09:56:17.834690 [debug] [Thread-7 (]: Marking all children of 'model.crop_project.fact_crop_weather' to be skipped because of status 'skipped'. 
+[0m09:56:17.834690 [debug] [Thread-3 (]: Began running node model.crop_project.int_crop_weather_aqi
+[0m09:56:17.835689 [info ] [Thread-3 (]: 9 of 9 SKIP relation dbtcrop.int_crop_weather_aqi .............................. [[33mSKIP[0m]
+[0m09:56:17.835689 [debug] [Thread-3 (]: Finished running node model.crop_project.int_crop_weather_aqi
+[0m09:56:17.836690 [debug] [Thread-7 (]: Marking all children of 'model.crop_project.int_crop_weather_aqi' to be skipped because of status 'skipped'. 
+[0m09:56:17.837691 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:56:17.867320 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:56:17.867320 [debug] [MainThread]: Connection 'list_dbt-crop' was properly closed.
+[0m09:56:17.867320 [debug] [MainThread]: Connection 'list_dbt-crop_dbtcrop' was properly closed.
+[0m09:56:17.867320 [debug] [MainThread]: Connection 'model.crop_project.stg_live' was properly closed.
+[0m09:56:17.867320 [debug] [MainThread]: Connection 'model.crop_project.stg_crop_weather' was properly closed.
+[0m09:56:17.867320 [info ] [MainThread]: 
+[0m09:56:17.867320 [info ] [MainThread]: Finished running 9 view models in 0 hours 0 minutes and 2.41 seconds (2.41s).
+[0m09:56:17.867320 [debug] [MainThread]: Command end result
+[0m09:56:17.886603 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m09:56:17.887806 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m09:56:17.887806 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\goura\Desktop\dbtdm2\target\run_results.json
+[0m09:56:17.894309 [info ] [MainThread]: 
+[0m09:56:17.894309 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m09:56:17.895654 [info ] [MainThread]: 
+[0m09:56:17.895654 [error] [MainThread]:   Compilation Error in model stg_live (models\crop_live\staging\stg_live.sql)
+  Trying to create view `dbt-crop`.`dbtcrop`.`stg_live`, but it currently exists as a table. Either drop `dbt-crop`.`dbtcrop`.`stg_live` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_live (models\crop_live\staging\stg_live.sql)
+[0m09:56:17.895654 [info ] [MainThread]: 
+[0m09:56:17.895654 [error] [MainThread]:   Compilation Error in model stg_crop_weather (models\crop_live\staging\stg_crop_weather.sql)
+  Trying to create view `dbt-crop`.`dbtcrop`.`stg_crop_weather`, but it currently exists as a table. Either drop `dbt-crop`.`dbtcrop`.`stg_crop_weather` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\relations\view\replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros\relations\view\replace.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_crop_weather (models\crop_live\staging\stg_crop_weather.sql)
+[0m09:56:17.895654 [info ] [MainThread]: 
+[0m09:56:17.895654 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=7 TOTAL=9
+[0m09:56:17.895654 [debug] [MainThread]: Command `dbt build` failed at 09:56:17.895654 after 5.20 seconds
+[0m09:56:17.895654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C2851A8830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C2854586E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C285550230>]}
+[0m09:56:17.895654 [debug] [MainThread]: Flushing usage events
+[0m09:56:18.521662 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:56:37.357437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021572909D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215704A1FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215708929F0>]}
+
+
+============================== 09:56:37.357437 | 36819b9c-ea34-4dea-ab89-d5763dfa824a ==============================
+[0m09:56:37.357437 [info ] [MainThread]: Running with dbt=1.9.4
+[0m09:56:37.357437 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\goura\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\goura\\Desktop\\dbtdm2\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt build --full-refresh', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:56:38.642153 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '36819b9c-ea34-4dea-ab89-d5763dfa824a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002157359CD40>]}
+[0m09:56:38.678747 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '36819b9c-ea34-4dea-ab89-d5763dfa824a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002150E967680>]}
+[0m09:56:38.678747 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m09:56:38.900725 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m09:56:38.996394 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:56:38.996394 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:56:38.996394 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.intermediate
+- models.staging
+- models.crop_live
+- models.facts
+- models.dimensions
+[0m09:56:39.030804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '36819b9c-ea34-4dea-ab89-d5763dfa824a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002150F094260>]}
+[0m09:56:39.073027 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m09:56:39.079602 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m09:56:39.108705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '36819b9c-ea34-4dea-ab89-d5763dfa824a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002150F2BD400>]}
+[0m09:56:39.108705 [info ] [MainThread]: Found 9 models, 2 sources, 491 macros
+[0m09:56:39.110688 [info ] [MainThread]: 
+[0m09:56:39.110688 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:56:39.110688 [info ] [MainThread]: 
+[0m09:56:39.110688 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:56:39.110688 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-crop'
+[0m09:56:39.110688 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:56:39.963460 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-crop_dbtcrop'
+[0m09:56:39.963460 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:56:41.154261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '36819b9c-ea34-4dea-ab89-d5763dfa824a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002150EE22990>]}
+[0m09:56:41.156421 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:56:41.181547 [debug] [Thread-1 (]: Began running node model.crop_project.stg_crop_weather
+[0m09:56:41.181547 [debug] [Thread-2 (]: Began running node model.crop_project.stg_live
+[0m09:56:41.181547 [info ] [Thread-1 (]: 1 of 9 START sql view model dbtcrop.stg_crop_weather ........................... [RUN]
+[0m09:56:41.181547 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.crop_project.stg_crop_weather'
+[0m09:56:41.181547 [info ] [Thread-2 (]: 2 of 9 START sql view model dbtcrop.stg_live ................................... [RUN]
+[0m09:56:41.181547 [debug] [Thread-1 (]: Began compiling node model.crop_project.stg_crop_weather
+[0m09:56:41.181547 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.crop_project.stg_live'
+[0m09:56:41.193683 [debug] [Thread-1 (]: Writing injected SQL for node "model.crop_project.stg_crop_weather"
+[0m09:56:41.197231 [debug] [Thread-2 (]: Began compiling node model.crop_project.stg_live
+[0m09:56:41.199520 [debug] [Thread-2 (]: Writing injected SQL for node "model.crop_project.stg_live"
+[0m09:56:41.200576 [debug] [Thread-1 (]: Began executing node model.crop_project.stg_crop_weather
+[0m09:56:41.214445 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m09:56:41.245677 [debug] [Thread-2 (]: Began executing node model.crop_project.stg_live
+[0m09:56:41.247829 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m09:56:42.146949 [debug] [Thread-2 (]: Writing runtime sql for node "model.crop_project.stg_live"
+[0m09:56:42.146949 [debug] [Thread-2 (]: On model.crop_project.stg_live: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "crop_project", "target_name": "dev", "node_id": "model.crop_project.stg_live"} */
+
+
+  create or replace view `dbt-crop`.`dbtcrop`.`stg_live`
+  OPTIONS()
+  as SELECT
+  State AS state,
+  Latitude AS latitude,
+  Longitude AS longitude,
+  Timestamp AS timestamp,
+  PM2_5,
+  PM10,
+  NO2,
+  CO,
+  O3,
+  SO2
+FROM `dbt-crop`.`crop_weather_ds`.`live_aqi_data`;
+
+
+[0m09:56:42.157086 [debug] [Thread-1 (]: Writing runtime sql for node "model.crop_project.stg_crop_weather"
+[0m09:56:42.157086 [debug] [Thread-1 (]: On model.crop_project.stg_crop_weather: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "crop_project", "target_name": "dev", "node_id": "model.crop_project.stg_crop_weather"} */
+
+
+  create or replace view `dbt-crop`.`dbtcrop`.`stg_crop_weather`
+  OPTIONS()
+  as SELECT
+  crop,
+  crop_Year,
+  season,
+  state,
+  area,
+  production,
+  annual_rainfall,
+  fertilizer,
+  pesticide,
+  yield,
+  avg_temp,
+  min_temp,
+  max_temp,
+  precipitation
+FROM `dbt-crop.crop_weather_ds.crop_weather`;
+
+
+[0m09:56:42.612130 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:4903e4d8-98ff-473b-a9e6-3a605a8c4908&page=queryresults
+[0m09:56:42.612130 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:3b2275cc-2fe1-4f51-9014-3218d4922dcc&page=queryresults
+[0m09:56:46.361480 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '36819b9c-ea34-4dea-ab89-d5763dfa824a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002150E92B0B0>]}
+[0m09:56:46.361480 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '36819b9c-ea34-4dea-ab89-d5763dfa824a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215707FEF90>]}
+[0m09:56:46.361480 [info ] [Thread-2 (]: 2 of 9 OK created sql view model dbtcrop.stg_live .............................. [[32mCREATE VIEW (0 processed)[0m in 5.16s]
+[0m09:56:46.361480 [info ] [Thread-1 (]: 1 of 9 OK created sql view model dbtcrop.stg_crop_weather ...................... [[32mCREATE VIEW (0 processed)[0m in 5.18s]
+[0m09:56:46.361480 [debug] [Thread-2 (]: Finished running node model.crop_project.stg_live
+[0m09:56:46.361480 [debug] [Thread-1 (]: Finished running node model.crop_project.stg_crop_weather
+[0m09:56:46.361480 [debug] [Thread-4 (]: Began running node model.crop_project.fact_aqi
+[0m09:56:46.361480 [debug] [Thread-3 (]: Began running node model.crop_project.crop_weather
+[0m09:56:46.361480 [debug] [Thread-2 (]: Began running node model.crop_project.dim_crop
+[0m09:56:46.361480 [info ] [Thread-4 (]: 3 of 9 START sql view model dbtcrop.fact_aqi ................................... [RUN]
+[0m09:56:46.361480 [debug] [Thread-1 (]: Began running node model.crop_project.dim_seasons
+[0m09:56:46.361480 [info ] [Thread-3 (]: 4 of 9 START sql view model dbtcrop.crop_weather ............................... [RUN]
+[0m09:56:46.361480 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.crop_project.fact_aqi'
+[0m09:56:46.370133 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.crop_project.crop_weather'
+[0m09:56:46.370133 [debug] [Thread-4 (]: Began compiling node model.crop_project.fact_aqi
+[0m09:56:46.361480 [info ] [Thread-2 (]: 5 of 9 START sql view model dbtcrop.dim_crop ................................... [RUN]
+[0m09:56:46.370133 [info ] [Thread-1 (]: 6 of 9 START sql view model dbtcrop.dim_seasons ................................ [RUN]
+[0m09:56:46.371630 [debug] [Thread-3 (]: Began compiling node model.crop_project.crop_weather
+[0m09:56:46.371630 [debug] [Thread-4 (]: Writing injected SQL for node "model.crop_project.fact_aqi"
+[0m09:56:46.375391 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.crop_project.stg_live, now model.crop_project.dim_crop)
+[0m09:56:46.378431 [debug] [Thread-2 (]: Began compiling node model.crop_project.dim_crop
+[0m09:56:46.378431 [debug] [Thread-3 (]: Writing injected SQL for node "model.crop_project.crop_weather"
+[0m09:56:46.375391 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.crop_project.stg_crop_weather, now model.crop_project.dim_seasons)
+[0m09:56:46.380714 [debug] [Thread-2 (]: Writing injected SQL for node "model.crop_project.dim_crop"
+[0m09:56:46.381320 [debug] [Thread-1 (]: Began compiling node model.crop_project.dim_seasons
+[0m09:56:46.382393 [debug] [Thread-4 (]: Began executing node model.crop_project.fact_aqi
+[0m09:56:46.382393 [debug] [Thread-3 (]: Began executing node model.crop_project.crop_weather
+[0m09:56:46.384367 [debug] [Thread-1 (]: Writing injected SQL for node "model.crop_project.dim_seasons"
+[0m09:56:46.389330 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m09:56:46.391311 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:56:46.391311 [debug] [Thread-2 (]: Began executing node model.crop_project.dim_crop
+[0m09:56:46.448664 [debug] [Thread-1 (]: Began executing node model.crop_project.dim_seasons
+[0m09:56:46.448664 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:56:46.458084 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:56:47.446021 [debug] [Thread-3 (]: Writing runtime sql for node "model.crop_project.crop_weather"
+[0m09:56:47.446021 [debug] [Thread-3 (]: On model.crop_project.crop_weather: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "crop_project", "target_name": "dev", "node_id": "model.crop_project.crop_weather"} */
+
+
+  create or replace view `dbt-crop`.`dbtcrop`.`crop_weather`
+  OPTIONS()
+  as SELECT
+  state,
+  crop,
+  crop_year,
+  season,
+  area,
+  production,
+  yield,
+  annual_rainfall,
+  fertilizer,
+  pesticide,
+  avg_temp,
+  min_temp,
+  max_temp,
+  precipitation
+FROM `dbt-crop`.`dbtcrop`.`stg_crop_weather`;
+
+
+[0m09:56:47.509735 [debug] [Thread-4 (]: Writing runtime sql for node "model.crop_project.fact_aqi"
+[0m09:56:47.509735 [debug] [Thread-4 (]: On model.crop_project.fact_aqi: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "crop_project", "target_name": "dev", "node_id": "model.crop_project.fact_aqi"} */
+
+
+  create or replace view `dbt-crop`.`dbtcrop`.`fact_aqi`
+  OPTIONS()
+  as SELECT
+  state,
+  timestamp,
+  pm2_5,
+  pm10,
+  no2,
+  co,
+  o3,
+  so2
+FROM `dbt-crop`.`dbtcrop`.`stg_live`;
+
+
+[0m09:56:47.541761 [debug] [Thread-2 (]: Writing runtime sql for node "model.crop_project.dim_crop"
+[0m09:56:47.556734 [debug] [Thread-2 (]: On model.crop_project.dim_crop: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "crop_project", "target_name": "dev", "node_id": "model.crop_project.dim_crop"} */
+
+
+  create or replace view `dbt-crop`.`dbtcrop`.`dim_crop`
+  OPTIONS()
+  as SELECT DISTINCT
+  crop
+FROM `dbt-crop`.`dbtcrop`.`stg_crop_weather`;
+
+
+[0m09:56:47.557742 [debug] [Thread-1 (]: Writing runtime sql for node "model.crop_project.dim_seasons"
+[0m09:56:47.566563 [debug] [Thread-1 (]: On model.crop_project.dim_seasons: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "crop_project", "target_name": "dev", "node_id": "model.crop_project.dim_seasons"} */
+
+
+  create or replace view `dbt-crop`.`dbtcrop`.`dim_seasons`
+  OPTIONS()
+  as SELECT DISTINCT
+  season
+FROM `dbt-crop`.`dbtcrop`.`stg_crop_weather`;
+
+
+[0m09:56:48.000417 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:8b8fb053-3c06-42df-857a-2ac6dc7700e5&page=queryresults
+[0m09:56:48.016523 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:70e61228-6fd2-4c8d-8f0e-37406f67fe3c&page=queryresults
+[0m09:56:48.080909 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:cae84539-619d-4586-a12b-83fc425d4779&page=queryresults
+[0m09:56:48.080909 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:4e32c109-bf39-4286-81bc-43779692580e&page=queryresults
+[0m09:56:48.466566 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '36819b9c-ea34-4dea-ab89-d5763dfa824a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215109362A0>]}
+[0m09:56:48.468570 [info ] [Thread-4 (]: 3 of 9 OK created sql view model dbtcrop.fact_aqi .............................. [[32mCREATE VIEW (0 processed)[0m in 2.11s]
+[0m09:56:48.468570 [debug] [Thread-4 (]: Finished running node model.crop_project.fact_aqi
+[0m09:56:48.468570 [debug] [Thread-4 (]: Began running node model.crop_project.dim_state
+[0m09:56:48.468570 [info ] [Thread-4 (]: 7 of 9 START sql view model dbtcrop.dim_state .................................. [RUN]
+[0m09:56:48.468570 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.crop_project.fact_aqi, now model.crop_project.dim_state)
+[0m09:56:48.468570 [debug] [Thread-4 (]: Began compiling node model.crop_project.dim_state
+[0m09:56:48.472692 [debug] [Thread-4 (]: Writing injected SQL for node "model.crop_project.dim_state"
+[0m09:56:48.472692 [debug] [Thread-4 (]: Began executing node model.crop_project.dim_state
+[0m09:56:48.474697 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m09:56:48.526685 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '36819b9c-ea34-4dea-ab89-d5763dfa824a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021510935E50>]}
+[0m09:56:48.526685 [info ] [Thread-3 (]: 4 of 9 OK created sql view model dbtcrop.crop_weather .......................... [[32mCREATE VIEW (0 processed)[0m in 2.16s]
+[0m09:56:48.526685 [debug] [Thread-3 (]: Finished running node model.crop_project.crop_weather
+[0m09:56:48.526685 [debug] [Thread-3 (]: Began running node model.crop_project.fact_crop_weather
+[0m09:56:48.526685 [info ] [Thread-3 (]: 8 of 9 START sql view model dbtcrop.fact_crop_weather .......................... [RUN]
+[0m09:56:48.526685 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.crop_project.crop_weather, now model.crop_project.fact_crop_weather)
+[0m09:56:48.526685 [debug] [Thread-3 (]: Began compiling node model.crop_project.fact_crop_weather
+[0m09:56:48.526685 [debug] [Thread-3 (]: Writing injected SQL for node "model.crop_project.fact_crop_weather"
+[0m09:56:48.526685 [debug] [Thread-3 (]: Began executing node model.crop_project.fact_crop_weather
+[0m09:56:48.526685 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m09:56:48.568730 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '36819b9c-ea34-4dea-ab89-d5763dfa824a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002150F0F1850>]}
+[0m09:56:48.568730 [info ] [Thread-1 (]: 6 of 9 OK created sql view model dbtcrop.dim_seasons ........................... [[32mCREATE VIEW (0 processed)[0m in 2.19s]
+[0m09:56:48.568730 [debug] [Thread-1 (]: Finished running node model.crop_project.dim_seasons
+[0m09:56:48.590884 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '36819b9c-ea34-4dea-ab89-d5763dfa824a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002151094D9D0>]}
+[0m09:56:48.592887 [info ] [Thread-2 (]: 5 of 9 OK created sql view model dbtcrop.dim_crop .............................. [[32mCREATE VIEW (0 processed)[0m in 2.22s]
+[0m09:56:48.594017 [debug] [Thread-2 (]: Finished running node model.crop_project.dim_crop
+[0m09:56:49.380466 [debug] [Thread-4 (]: Writing runtime sql for node "model.crop_project.dim_state"
+[0m09:56:49.382476 [debug] [Thread-4 (]: On model.crop_project.dim_state: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "crop_project", "target_name": "dev", "node_id": "model.crop_project.dim_state"} */
+
+
+  create or replace view `dbt-crop`.`dbtcrop`.`dim_state`
+  OPTIONS()
+  as SELECT DISTINCT
+  state
+FROM (
+  SELECT state FROM `dbt-crop`.`dbtcrop`.`stg_crop_weather`
+  UNION DISTINCT
+  SELECT state FROM `dbt-crop`.`dbtcrop`.`stg_live`
+);
+
+
+[0m09:56:49.484657 [debug] [Thread-3 (]: Writing runtime sql for node "model.crop_project.fact_crop_weather"
+[0m09:56:49.486124 [debug] [Thread-3 (]: On model.crop_project.fact_crop_weather: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "crop_project", "target_name": "dev", "node_id": "model.crop_project.fact_crop_weather"} */
+
+
+  create or replace view `dbt-crop`.`dbtcrop`.`fact_crop_weather`
+  OPTIONS()
+  as SELECT
+  state,
+  crop,
+  crop_year,
+  season,
+  area,
+  production,
+  yield,
+  annual_rainfall,
+  fertilizer,
+  pesticide,
+  avg_temp,
+  min_temp,
+  max_temp,
+  precipitation
+FROM `dbt-crop`.`dbtcrop`.`stg_crop_weather`;
+
+
+[0m09:56:49.896981 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:0606a0d2-2730-492f-835d-5fe35590f9bc&page=queryresults
+[0m09:56:50.349334 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '36819b9c-ea34-4dea-ab89-d5763dfa824a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002151094FF80>]}
+[0m09:56:50.350253 [info ] [Thread-4 (]: 7 of 9 OK created sql view model dbtcrop.dim_state ............................. [[32mCREATE VIEW (0 processed)[0m in 1.88s]
+[0m09:56:50.350253 [debug] [Thread-4 (]: Finished running node model.crop_project.dim_state
+[0m09:56:50.407127 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:26fd4975-14f3-447f-8100-dd1830eeebbb&page=queryresults
+[0m09:56:50.892041 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '36819b9c-ea34-4dea-ab89-d5763dfa824a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002151094D430>]}
+[0m09:56:50.894049 [info ] [Thread-3 (]: 8 of 9 OK created sql view model dbtcrop.fact_crop_weather ..................... [[32mCREATE VIEW (0 processed)[0m in 2.37s]
+[0m09:56:50.894049 [debug] [Thread-3 (]: Finished running node model.crop_project.fact_crop_weather
+[0m09:56:50.894049 [debug] [Thread-1 (]: Began running node model.crop_project.int_crop_weather_aqi
+[0m09:56:50.894049 [info ] [Thread-1 (]: 9 of 9 START sql view model dbtcrop.int_crop_weather_aqi ....................... [RUN]
+[0m09:56:50.894049 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.crop_project.dim_seasons, now model.crop_project.int_crop_weather_aqi)
+[0m09:56:50.894049 [debug] [Thread-1 (]: Began compiling node model.crop_project.int_crop_weather_aqi
+[0m09:56:50.898812 [debug] [Thread-1 (]: Writing injected SQL for node "model.crop_project.int_crop_weather_aqi"
+[0m09:56:50.898812 [debug] [Thread-1 (]: Began executing node model.crop_project.int_crop_weather_aqi
+[0m09:56:50.900818 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:56:51.701847 [debug] [Thread-1 (]: Writing runtime sql for node "model.crop_project.int_crop_weather_aqi"
+[0m09:56:51.702871 [debug] [Thread-1 (]: On model.crop_project.int_crop_weather_aqi: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "crop_project", "target_name": "dev", "node_id": "model.crop_project.int_crop_weather_aqi"} */
+
+
+  create or replace view `dbt-crop`.`dbtcrop`.`int_crop_weather_aqi`
+  OPTIONS()
+  as WITH latest_aqi AS (
+  SELECT AS STRUCT *
+  FROM (
+    SELECT *,
+           ROW_NUMBER() OVER (PARTITION BY state ORDER BY timestamp DESC) AS rn
+    FROM `dbt-crop`.`dbtcrop`.`fact_aqi`
+  )
+  WHERE rn = 1
+)
+SELECT
+  cw.*,
+  aqi.pm2_5,
+  aqi.pm10,
+  aqi.no2,
+  aqi.co,
+  aqi.o3,
+  aqi.so2
+FROM `dbt-crop`.`dbtcrop`.`fact_crop_weather` cw
+LEFT JOIN latest_aqi aqi ON cw.state = aqi.state;
+
+
+[0m09:56:52.323384 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:b3088dcd-f70a-4dc9-9e7f-086fa22fb65b&page=queryresults
+[0m09:56:52.828463 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '36819b9c-ea34-4dea-ab89-d5763dfa824a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002151094E210>]}
+[0m09:56:52.830471 [info ] [Thread-1 (]: 9 of 9 OK created sql view model dbtcrop.int_crop_weather_aqi .................. [[32mCREATE VIEW (0 processed)[0m in 1.93s]
+[0m09:56:52.830471 [debug] [Thread-1 (]: Finished running node model.crop_project.int_crop_weather_aqi
+[0m09:56:52.830471 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:56:52.861694 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:56:52.862692 [debug] [MainThread]: Connection 'list_dbt-crop' was properly closed.
+[0m09:56:52.862692 [debug] [MainThread]: Connection 'list_dbt-crop_dbtcrop' was properly closed.
+[0m09:56:52.862692 [debug] [MainThread]: Connection 'model.crop_project.int_crop_weather_aqi' was properly closed.
+[0m09:56:52.862692 [debug] [MainThread]: Connection 'model.crop_project.dim_crop' was properly closed.
+[0m09:56:52.863635 [debug] [MainThread]: Connection 'model.crop_project.dim_state' was properly closed.
+[0m09:56:52.863635 [debug] [MainThread]: Connection 'model.crop_project.fact_crop_weather' was properly closed.
+[0m09:56:52.863635 [info ] [MainThread]: 
+[0m09:56:52.864540 [info ] [MainThread]: Finished running 9 view models in 0 hours 0 minutes and 13.75 seconds (13.75s).
+[0m09:56:52.866187 [debug] [MainThread]: Command end result
+[0m09:56:52.881976 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m09:56:52.883381 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m09:56:52.888826 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\goura\Desktop\dbtdm2\target\run_results.json
+[0m09:56:52.888826 [info ] [MainThread]: 
+[0m09:56:52.889704 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:56:52.889704 [info ] [MainThread]: 
+[0m09:56:52.890710 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 TOTAL=9
+[0m09:56:52.891709 [debug] [MainThread]: Command `dbt build` succeeded at 09:56:52.890710 after 15.63 seconds
+[0m09:56:52.892111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215731E7920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215729FBFE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215729FBEF0>]}
+[0m09:56:52.892111 [debug] [MainThread]: Flushing usage events
+[0m09:56:53.609179 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:56:58.301073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021430328FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214322E52B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214322E53D0>]}
+
+
+============================== 09:56:58.301073 | 914cdcf4-e1a2-4467-a863-a9b8ce0f5eeb ==============================
+[0m09:56:58.301073 [info ] [MainThread]: Running with dbt=1.9.4
+[0m09:56:58.301073 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\goura\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\goura\\Desktop\\dbtdm2\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:56:59.523866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '914cdcf4-e1a2-4467-a863-a9b8ce0f5eeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002144E766750>]}
+[0m09:56:59.571671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '914cdcf4-e1a2-4467-a863-a9b8ce0f5eeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002144E7673E0>]}
+[0m09:56:59.571671 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m09:56:59.775878 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m09:56:59.871383 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:56:59.871383 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:56:59.871383 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.crop_live
+- models.facts
+- models.dimensions
+- models.intermediate
+- models.staging
+[0m09:56:59.897348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '914cdcf4-e1a2-4467-a863-a9b8ce0f5eeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002144EBB4770>]}
+[0m09:56:59.930882 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m09:56:59.930882 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m09:56:59.960624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '914cdcf4-e1a2-4467-a863-a9b8ce0f5eeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002144EE659A0>]}
+[0m09:56:59.960624 [info ] [MainThread]: Found 9 models, 2 sources, 491 macros
+[0m09:56:59.960624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '914cdcf4-e1a2-4467-a863-a9b8ce0f5eeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002144E043FB0>]}
+[0m09:56:59.960624 [info ] [MainThread]: 
+[0m09:56:59.960624 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:56:59.960624 [info ] [MainThread]: 
+[0m09:56:59.960624 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:56:59.960624 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-crop'
+[0m09:56:59.960624 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:57:00.820169 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-crop_dbtcrop'
+[0m09:57:00.820169 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:57:01.597967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '914cdcf4-e1a2-4467-a863-a9b8ce0f5eeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021433168410>]}
+[0m09:57:01.597967 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:57:01.629575 [debug] [Thread-1 (]: Began running node model.crop_project.stg_crop_weather
+[0m09:57:01.629575 [debug] [Thread-2 (]: Began running node model.crop_project.stg_live
+[0m09:57:01.629575 [info ] [Thread-1 (]: 1 of 9 START sql view model dbtcrop.stg_crop_weather ........................... [RUN]
+[0m09:57:01.629575 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.crop_project.stg_crop_weather'
+[0m09:57:01.629575 [info ] [Thread-2 (]: 2 of 9 START sql view model dbtcrop.stg_live ................................... [RUN]
+[0m09:57:01.629575 [debug] [Thread-1 (]: Began compiling node model.crop_project.stg_crop_weather
+[0m09:57:01.629575 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.crop_project.stg_live'
+[0m09:57:01.642949 [debug] [Thread-1 (]: Writing injected SQL for node "model.crop_project.stg_crop_weather"
+[0m09:57:01.642949 [debug] [Thread-2 (]: Began compiling node model.crop_project.stg_live
+[0m09:57:01.645337 [debug] [Thread-2 (]: Writing injected SQL for node "model.crop_project.stg_live"
+[0m09:57:01.646834 [debug] [Thread-1 (]: Began executing node model.crop_project.stg_crop_weather
+[0m09:57:01.669227 [debug] [Thread-2 (]: Began executing node model.crop_project.stg_live
+[0m09:57:01.673403 [debug] [Thread-2 (]: Writing runtime sql for node "model.crop_project.stg_live"
+[0m09:57:01.675499 [debug] [Thread-1 (]: Writing runtime sql for node "model.crop_project.stg_crop_weather"
+[0m09:57:01.676278 [debug] [Thread-2 (]: On model.crop_project.stg_live: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "crop_project", "target_name": "dev", "node_id": "model.crop_project.stg_live"} */
+
+
+  create or replace view `dbt-crop`.`dbtcrop`.`stg_live`
+  OPTIONS()
+  as SELECT
+  State AS state,
+  Latitude AS latitude,
+  Longitude AS longitude,
+  Timestamp AS timestamp,
+  PM2_5,
+  PM10,
+  NO2,
+  CO,
+  O3,
+  SO2
+FROM `dbt-crop`.`crop_weather_ds`.`live_aqi_data`;
+
+
+[0m09:57:01.676278 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m09:57:01.676278 [debug] [Thread-1 (]: On model.crop_project.stg_crop_weather: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "crop_project", "target_name": "dev", "node_id": "model.crop_project.stg_crop_weather"} */
+
+
+  create or replace view `dbt-crop`.`dbtcrop`.`stg_crop_weather`
+  OPTIONS()
+  as SELECT
+  crop,
+  crop_Year,
+  season,
+  state,
+  area,
+  production,
+  annual_rainfall,
+  fertilizer,
+  pesticide,
+  yield,
+  avg_temp,
+  min_temp,
+  max_temp,
+  precipitation
+FROM `dbt-crop.crop_weather_ds.crop_weather`;
+
+
+[0m09:57:01.677380 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m09:57:02.780364 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:40537adb-95fa-4057-b9ed-34c4872b2f54&page=queryresults
+[0m09:57:02.789770 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:0b110179-a928-483c-8df1-3c16e980609e&page=queryresults
+[0m09:57:03.322826 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '914cdcf4-e1a2-4467-a863-a9b8ce0f5eeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002144E72B020>]}
+[0m09:57:03.322826 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '914cdcf4-e1a2-4467-a863-a9b8ce0f5eeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002144E7035C0>]}
+[0m09:57:03.322826 [info ] [Thread-2 (]: 2 of 9 OK created sql view model dbtcrop.stg_live .............................. [[32mCREATE VIEW (0 processed)[0m in 1.69s]
+[0m09:57:03.322826 [debug] [Thread-2 (]: Finished running node model.crop_project.stg_live
+[0m09:57:03.322826 [info ] [Thread-1 (]: 1 of 9 OK created sql view model dbtcrop.stg_crop_weather ...................... [[32mCREATE VIEW (0 processed)[0m in 1.69s]
+[0m09:57:03.322826 [debug] [Thread-1 (]: Finished running node model.crop_project.stg_crop_weather
+[0m09:57:03.322826 [debug] [Thread-4 (]: Began running node model.crop_project.crop_weather
+[0m09:57:03.322826 [debug] [Thread-3 (]: Began running node model.crop_project.dim_crop
+[0m09:57:03.322826 [info ] [Thread-4 (]: 3 of 9 START sql view model dbtcrop.crop_weather ............................... [RUN]
+[0m09:57:03.322826 [debug] [Thread-2 (]: Began running node model.crop_project.dim_seasons
+[0m09:57:03.322826 [debug] [Thread-1 (]: Began running node model.crop_project.dim_state
+[0m09:57:03.322826 [info ] [Thread-3 (]: 4 of 9 START sql view model dbtcrop.dim_crop ................................... [RUN]
+[0m09:57:03.322826 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.crop_project.crop_weather'
+[0m09:57:03.331758 [info ] [Thread-2 (]: 5 of 9 START sql view model dbtcrop.dim_seasons ................................ [RUN]
+[0m09:57:03.332611 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.crop_project.dim_crop'
+[0m09:57:03.331758 [info ] [Thread-1 (]: 6 of 9 START sql view model dbtcrop.dim_state .................................. [RUN]
+[0m09:57:03.333808 [debug] [Thread-4 (]: Began compiling node model.crop_project.crop_weather
+[0m09:57:03.333808 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.crop_project.stg_live, now model.crop_project.dim_seasons)
+[0m09:57:03.334818 [debug] [Thread-3 (]: Began compiling node model.crop_project.dim_crop
+[0m09:57:03.334818 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.crop_project.stg_crop_weather, now model.crop_project.dim_state)
+[0m09:57:03.337891 [debug] [Thread-4 (]: Writing injected SQL for node "model.crop_project.crop_weather"
+[0m09:57:03.337891 [debug] [Thread-2 (]: Began compiling node model.crop_project.dim_seasons
+[0m09:57:03.337891 [debug] [Thread-3 (]: Writing injected SQL for node "model.crop_project.dim_crop"
+[0m09:57:03.340358 [debug] [Thread-1 (]: Began compiling node model.crop_project.dim_state
+[0m09:57:03.342506 [debug] [Thread-2 (]: Writing injected SQL for node "model.crop_project.dim_seasons"
+[0m09:57:03.345488 [debug] [Thread-1 (]: Writing injected SQL for node "model.crop_project.dim_state"
+[0m09:57:03.343502 [debug] [Thread-4 (]: Began executing node model.crop_project.crop_weather
+[0m09:57:03.348594 [debug] [Thread-4 (]: Writing runtime sql for node "model.crop_project.crop_weather"
+[0m09:57:03.348594 [debug] [Thread-3 (]: Began executing node model.crop_project.dim_crop
+[0m09:57:03.349628 [debug] [Thread-2 (]: Began executing node model.crop_project.dim_seasons
+[0m09:57:03.349628 [debug] [Thread-1 (]: Began executing node model.crop_project.dim_state
+[0m09:57:03.351628 [debug] [Thread-3 (]: Writing runtime sql for node "model.crop_project.dim_crop"
+[0m09:57:03.355007 [debug] [Thread-2 (]: Writing runtime sql for node "model.crop_project.dim_seasons"
+[0m09:57:03.356231 [debug] [Thread-1 (]: Writing runtime sql for node "model.crop_project.dim_state"
+[0m09:57:03.356231 [debug] [Thread-4 (]: On model.crop_project.crop_weather: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "crop_project", "target_name": "dev", "node_id": "model.crop_project.crop_weather"} */
+
+
+  create or replace view `dbt-crop`.`dbtcrop`.`crop_weather`
+  OPTIONS()
+  as SELECT
+  state,
+  crop,
+  crop_year,
+  season,
+  area,
+  production,
+  yield,
+  annual_rainfall,
+  fertilizer,
+  pesticide,
+  avg_temp,
+  min_temp,
+  max_temp,
+  precipitation
+FROM `dbt-crop`.`dbtcrop`.`stg_crop_weather`;
+
+
+[0m09:57:03.356231 [debug] [Thread-3 (]: On model.crop_project.dim_crop: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "crop_project", "target_name": "dev", "node_id": "model.crop_project.dim_crop"} */
+
+
+  create or replace view `dbt-crop`.`dbtcrop`.`dim_crop`
+  OPTIONS()
+  as SELECT DISTINCT
+  crop
+FROM `dbt-crop`.`dbtcrop`.`stg_crop_weather`;
+
+
+[0m09:57:03.356231 [debug] [Thread-2 (]: On model.crop_project.dim_seasons: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "crop_project", "target_name": "dev", "node_id": "model.crop_project.dim_seasons"} */
+
+
+  create or replace view `dbt-crop`.`dbtcrop`.`dim_seasons`
+  OPTIONS()
+  as SELECT DISTINCT
+  season
+FROM `dbt-crop`.`dbtcrop`.`stg_crop_weather`;
+
+
+[0m09:57:03.356231 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m09:57:03.356231 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:57:03.361573 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:57:03.361573 [debug] [Thread-1 (]: On model.crop_project.dim_state: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "crop_project", "target_name": "dev", "node_id": "model.crop_project.dim_state"} */
+
+
+  create or replace view `dbt-crop`.`dbtcrop`.`dim_state`
+  OPTIONS()
+  as SELECT DISTINCT
+  state
+FROM (
+  SELECT state FROM `dbt-crop`.`dbtcrop`.`stg_crop_weather`
+  UNION DISTINCT
+  SELECT state FROM `dbt-crop`.`dbtcrop`.`stg_live`
+);
+
+
+[0m09:57:03.452947 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:57:04.681835 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:392c18a0-95d1-4c8f-9349-c6ef34d77b2e&page=queryresults
+[0m09:57:04.715211 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:5bd7c69c-32ff-469b-b987-63d82e040a7e&page=queryresults
+[0m09:57:04.779226 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:13874f8c-34aa-4f76-99cb-bd7c960d29d9&page=queryresults
+[0m09:57:04.791968 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:ddcc4778-8d07-49a4-ad48-d9b764dbdbdf&page=queryresults
+[0m09:57:05.136462 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '914cdcf4-e1a2-4467-a863-a9b8ce0f5eeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021450364470>]}
+[0m09:57:05.136462 [info ] [Thread-4 (]: 3 of 9 OK created sql view model dbtcrop.crop_weather .......................... [[32mCREATE VIEW (0 processed)[0m in 1.81s]
+[0m09:57:05.136462 [debug] [Thread-4 (]: Finished running node model.crop_project.crop_weather
+[0m09:57:05.136462 [debug] [Thread-4 (]: Began running node model.crop_project.fact_aqi
+[0m09:57:05.136462 [info ] [Thread-4 (]: 7 of 9 START sql view model dbtcrop.fact_aqi ................................... [RUN]
+[0m09:57:05.140677 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.crop_project.crop_weather, now model.crop_project.fact_aqi)
+[0m09:57:05.140677 [debug] [Thread-4 (]: Began compiling node model.crop_project.fact_aqi
+[0m09:57:05.143265 [debug] [Thread-4 (]: Writing injected SQL for node "model.crop_project.fact_aqi"
+[0m09:57:05.143265 [debug] [Thread-4 (]: Began executing node model.crop_project.fact_aqi
+[0m09:57:05.143265 [debug] [Thread-4 (]: Writing runtime sql for node "model.crop_project.fact_aqi"
+[0m09:57:05.143265 [debug] [Thread-4 (]: On model.crop_project.fact_aqi: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "crop_project", "target_name": "dev", "node_id": "model.crop_project.fact_aqi"} */
+
+
+  create or replace view `dbt-crop`.`dbtcrop`.`fact_aqi`
+  OPTIONS()
+  as SELECT
+  state,
+  timestamp,
+  pm2_5,
+  pm10,
+  no2,
+  co,
+  o3,
+  so2
+FROM `dbt-crop`.`dbtcrop`.`stg_live`;
+
+
+[0m09:57:05.143265 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m09:57:05.200922 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '914cdcf4-e1a2-4467-a863-a9b8ce0f5eeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214503E3800>]}
+[0m09:57:05.200922 [info ] [Thread-3 (]: 4 of 9 OK created sql view model dbtcrop.dim_crop .............................. [[32mCREATE VIEW (0 processed)[0m in 1.87s]
+[0m09:57:05.200922 [debug] [Thread-3 (]: Finished running node model.crop_project.dim_crop
+[0m09:57:05.200922 [debug] [Thread-3 (]: Began running node model.crop_project.fact_crop_weather
+[0m09:57:05.200922 [info ] [Thread-3 (]: 8 of 9 START sql view model dbtcrop.fact_crop_weather .......................... [RUN]
+[0m09:57:05.200922 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.crop_project.dim_crop, now model.crop_project.fact_crop_weather)
+[0m09:57:05.200922 [debug] [Thread-3 (]: Began compiling node model.crop_project.fact_crop_weather
+[0m09:57:05.200922 [debug] [Thread-3 (]: Writing injected SQL for node "model.crop_project.fact_crop_weather"
+[0m09:57:05.200922 [debug] [Thread-3 (]: Began executing node model.crop_project.fact_crop_weather
+[0m09:57:05.200922 [debug] [Thread-3 (]: Writing runtime sql for node "model.crop_project.fact_crop_weather"
+[0m09:57:05.200922 [debug] [Thread-3 (]: On model.crop_project.fact_crop_weather: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "crop_project", "target_name": "dev", "node_id": "model.crop_project.fact_crop_weather"} */
+
+
+  create or replace view `dbt-crop`.`dbtcrop`.`fact_crop_weather`
+  OPTIONS()
+  as SELECT
+  state,
+  crop,
+  crop_year,
+  season,
+  area,
+  production,
+  yield,
+  annual_rainfall,
+  fertilizer,
+  pesticide,
+  avg_temp,
+  min_temp,
+  max_temp,
+  precipitation
+FROM `dbt-crop`.`dbtcrop`.`stg_crop_weather`;
+
+
+[0m09:57:05.200922 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m09:57:05.241763 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '914cdcf4-e1a2-4467-a863-a9b8ce0f5eeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214503F4A10>]}
+[0m09:57:05.242843 [info ] [Thread-1 (]: 6 of 9 OK created sql view model dbtcrop.dim_state ............................. [[32mCREATE VIEW (0 processed)[0m in 1.91s]
+[0m09:57:05.242843 [debug] [Thread-1 (]: Finished running node model.crop_project.dim_state
+[0m09:57:05.423094 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '914cdcf4-e1a2-4467-a863-a9b8ce0f5eeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021450423DD0>]}
+[0m09:57:05.425097 [info ] [Thread-2 (]: 5 of 9 OK created sql view model dbtcrop.dim_seasons ........................... [[32mCREATE VIEW (0 processed)[0m in 2.09s]
+[0m09:57:05.425097 [debug] [Thread-2 (]: Finished running node model.crop_project.dim_seasons
+[0m09:57:06.325022 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:7b9aa591-1759-42a8-9f4a-ee08ab432167&page=queryresults
+[0m09:57:06.411992 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:eb4dd365-a494-444e-a419-e19e6a16cff1&page=queryresults
+[0m09:57:06.781951 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '914cdcf4-e1a2-4467-a863-a9b8ce0f5eeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021450092120>]}
+[0m09:57:06.781951 [info ] [Thread-4 (]: 7 of 9 OK created sql view model dbtcrop.fact_aqi .............................. [[32mCREATE VIEW (0 processed)[0m in 1.64s]
+[0m09:57:06.781951 [debug] [Thread-4 (]: Finished running node model.crop_project.fact_aqi
+[0m09:57:06.898288 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '914cdcf4-e1a2-4467-a863-a9b8ce0f5eeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002145003FB60>]}
+[0m09:57:06.900033 [info ] [Thread-3 (]: 8 of 9 OK created sql view model dbtcrop.fact_crop_weather ..................... [[32mCREATE VIEW (0 processed)[0m in 1.70s]
+[0m09:57:06.900033 [debug] [Thread-3 (]: Finished running node model.crop_project.fact_crop_weather
+[0m09:57:06.900033 [debug] [Thread-1 (]: Began running node model.crop_project.int_crop_weather_aqi
+[0m09:57:06.900033 [info ] [Thread-1 (]: 9 of 9 START sql view model dbtcrop.int_crop_weather_aqi ....................... [RUN]
+[0m09:57:06.900033 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.crop_project.dim_state, now model.crop_project.int_crop_weather_aqi)
+[0m09:57:06.900033 [debug] [Thread-1 (]: Began compiling node model.crop_project.int_crop_weather_aqi
+[0m09:57:06.900033 [debug] [Thread-1 (]: Writing injected SQL for node "model.crop_project.int_crop_weather_aqi"
+[0m09:57:06.900033 [debug] [Thread-1 (]: Began executing node model.crop_project.int_crop_weather_aqi
+[0m09:57:06.900033 [debug] [Thread-1 (]: Writing runtime sql for node "model.crop_project.int_crop_weather_aqi"
+[0m09:57:06.900033 [debug] [Thread-1 (]: On model.crop_project.int_crop_weather_aqi: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "crop_project", "target_name": "dev", "node_id": "model.crop_project.int_crop_weather_aqi"} */
+
+
+  create or replace view `dbt-crop`.`dbtcrop`.`int_crop_weather_aqi`
+  OPTIONS()
+  as WITH latest_aqi AS (
+  SELECT AS STRUCT *
+  FROM (
+    SELECT *,
+           ROW_NUMBER() OVER (PARTITION BY state ORDER BY timestamp DESC) AS rn
+    FROM `dbt-crop`.`dbtcrop`.`fact_aqi`
+  )
+  WHERE rn = 1
+)
+SELECT
+  cw.*,
+  aqi.pm2_5,
+  aqi.pm10,
+  aqi.no2,
+  aqi.co,
+  aqi.o3,
+  aqi.so2
+FROM `dbt-crop`.`dbtcrop`.`fact_crop_weather` cw
+LEFT JOIN latest_aqi aqi ON cw.state = aqi.state;
+
+
+[0m09:57:06.900033 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:57:07.995409 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crop&j=bq:US:d0bcb5c9-534c-4a54-b92c-8764cb8950dd&page=queryresults
+[0m09:57:08.515410 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '914cdcf4-e1a2-4467-a863-a9b8ce0f5eeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021450462ED0>]}
+[0m09:57:08.515410 [info ] [Thread-1 (]: 9 of 9 OK created sql view model dbtcrop.int_crop_weather_aqi .................. [[32mCREATE VIEW (0 processed)[0m in 1.62s]
+[0m09:57:08.515410 [debug] [Thread-1 (]: Finished running node model.crop_project.int_crop_weather_aqi
+[0m09:57:08.519691 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:57:08.544645 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:57:08.544645 [debug] [MainThread]: Connection 'list_dbt-crop' was properly closed.
+[0m09:57:08.544645 [debug] [MainThread]: Connection 'list_dbt-crop_dbtcrop' was properly closed.
+[0m09:57:08.544645 [debug] [MainThread]: Connection 'model.crop_project.int_crop_weather_aqi' was properly closed.
+[0m09:57:08.544645 [debug] [MainThread]: Connection 'model.crop_project.dim_seasons' was properly closed.
+[0m09:57:08.550794 [debug] [MainThread]: Connection 'model.crop_project.fact_aqi' was properly closed.
+[0m09:57:08.550794 [debug] [MainThread]: Connection 'model.crop_project.fact_crop_weather' was properly closed.
+[0m09:57:08.550794 [info ] [MainThread]: 
+[0m09:57:08.551800 [info ] [MainThread]: Finished running 9 view models in 0 hours 0 minutes and 8.59 seconds (8.59s).
+[0m09:57:08.552439 [debug] [MainThread]: Command end result
+[0m09:57:08.631682 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\goura\Desktop\dbtdm2\target\manifest.json
+[0m09:57:08.631682 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\goura\Desktop\dbtdm2\target\semantic_manifest.json
+[0m09:57:08.637298 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\goura\Desktop\dbtdm2\target\run_results.json
+[0m09:57:08.637298 [info ] [MainThread]: 
+[0m09:57:08.637298 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:57:08.637298 [info ] [MainThread]: 
+[0m09:57:08.637298 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 TOTAL=9
+[0m09:57:08.637298 [debug] [MainThread]: Command `dbt run` succeeded at 09:57:08.637298 after 10.44 seconds
+[0m09:57:08.637298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021432C85100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021432FBED80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021430D05340>]}
+[0m09:57:08.637298 [debug] [MainThread]: Flushing usage events
+[0m09:57:09.334751 [debug] [MainThread]: An error was encountered while trying to flush usage events

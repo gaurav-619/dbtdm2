@@ -15,6 +15,7 @@ clean-targets:
   - "dbt_packages"
 
 models:
+  crop_project:
   crop_live:
     +materialized: table
   facts:
